@@ -49,7 +49,7 @@
                     <p>
                         {{ GoogleTranslate::trans('Email Address', session()->get('locale')) }}
                     </p>
-                    <a href="#!"><span class="__cf_email__" data-cfemail="553d3039393a151c273c26307b363a38">[email&#160;protected]</span></a>
+                    <a href="mailto:https://msgroupoftravels.com/"><span class="__cf_email__" data-cfemail="553d3039393a151c273c26307b363a38">https://msgroupoftravels.com/</span></a>
                 </li>
                 <li>
                     <div class="icon">
