@@ -50,7 +50,7 @@
 </head>
 <body>
 <!-- Pre Loader Start -->
-<div class="preloader clock text-center">
+{{-- <div class="preloader clock text-center">
     <div class="organiaLoader">
         <div class="loaderO">
         <span>M</span>
@@ -60,4 +60,4 @@
         
         </div>
     </div>
-</div>
+</div> --}}
