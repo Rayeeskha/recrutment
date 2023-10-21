@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title','MS International')
-@section('meta_keywords','MS International')
-@section('meta_description', 'MS International')
+@section('page_title','MS Group Of Travels')
+@section('meta_keywords','MS Group Of Travels')
+@section('meta_description', 'MS Group Of Travels')
 @section('container')
 
 <!-- Banner -->
