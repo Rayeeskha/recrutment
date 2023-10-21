@@ -55,7 +55,8 @@
         <div class="loaderO">
         <span>M</span>
         <span>S</span>
-        <span>I</span>
+        <span>G</span>
+        <span>T</span>
         
         </div>
     </div>
