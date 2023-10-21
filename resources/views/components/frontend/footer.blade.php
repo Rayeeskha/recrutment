@@ -164,7 +164,7 @@
  <!--Start Copy Right Area-->
 <div class="copy-right-area">
     <div class="container">
-        <p>© <span> {{ GoogleTranslate::trans('MS International', session()->get('locale')) }}  |</span>   {{ GoogleTranslate::trans('All Rights Reserved | Website Developed by', session()->get('locale')) }}<a href="javascript:void(0)" target="_blank"> {{ GoogleTranslate::trans('Rayees khan', session()->get('locale')) }}</a></p>
+        <p>© <span> {{ GoogleTranslate::trans('MS Group Of Travels', session()->get('locale')) }}  |</span>   {{ GoogleTranslate::trans('All Rights Reserved | Website Developed by', session()->get('locale')) }}<a href="https://khanrayees.com/" target="_blank"> {{ GoogleTranslate::trans('Rayees khan', session()->get('locale')) }}</a></p>
     </div>
 </div>
 <!--End Copy Right Area-->
