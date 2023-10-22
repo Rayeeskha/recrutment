@@ -90,13 +90,13 @@
                 <div class="others-options style2 ms-auto">
                     <div class="option-item">
                         <div class="header-contact-box">
-                            <a href="tel:+0408886666"><div class="icon">
+                            <a href="tel:8299352134"><div class="icon">
                                 <i class="flaticon-phone-call-1"></i>
                             </div></a>
                             <div class="content">
                                 <p>{{ GoogleTranslate::trans('Call Us Now', session()->get('locale')) }}
                                 </p>
-                                <a href="tel:+0408886666">+040 888 6666</a>
+                                <a href="tel:8299352134">+91 8299352134</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@
                 <div class="others-options style2 ms-auto">
                     <div class="option-item">
                         <div class="header-contact-box">
-                            <a href="tel:+0408886666">
+                            <a href="tel:8299352134">
                                 <div class="icon">
                                     <i class="flaticon-phone-call-1"></i>
                                 </div>
