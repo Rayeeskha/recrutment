@@ -43,7 +43,7 @@ class CustomHelper{
 
 	public static function getInstagramFeed(){
         $fields = "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username";
-        $token = "IGQWRQbldjaER5LVdua0MyRkpfVl80WGRZAaE5oeWMwazV6bU1JZAEV0azRGcGtPRXVTOGE1WmRpbS1IY3BCN1ZAYU3BkQkJOakJBNU5UMl8wTXVqRGV1NGhzR3BoMFJXNFpJWHVNX1RJVjItMXVuMlhRcmhYQ181WjQZD";
+        $token = "IGQWROMUtsT2xpSDdndHRrYW9meEZADTnhEcUlpTU00VHV2NjZAuZAktlaHV4Wjc0YmFUbThLWUs3NmgwdHdEREl1WTM4ck41VlBhalBrMTFaT29aeWx0WHdsbnM2NFV4VVM4UkE0XzlZAQWlja3QwWldLQV9jZA0c1LW8ZD";
         $limit = 12;
          
         $json_feed_url="https://graph.instagram.com/me/media?fields={$fields}&access_token={$token}&limit={$limit}";

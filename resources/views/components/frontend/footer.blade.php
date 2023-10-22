@@ -105,16 +105,19 @@
                 {{ GoogleTranslate::trans('Instagram', session()->get('locale')) }}
             </h3>
             <div class="row">
-                @foreach(CustomHelper::getInstagramFeed() ?? '' as $insta)
-                <div class="col-4">
-                    <div class="instagram-img">
-                        <img src="{{ $insta['media_url'] }}" alt="Image" width="100" height="50">
-                        <div class="icon">
-                            <a href="{{ $insta['permalink'] }}" target="_blank"><i class="flaticon-instagram-1"></i></a>
+                @php $instagram = CustomHelper::getInstagramFeed(); @endphp
+                @if(isset($instagram[0]))
+                    @foreach($instagram ?? '' as $insta)
+                    <div class="col-4">
+                        <div class="instagram-img">
+                            <img src="{{ $insta['media_url'] }}" alt="Image" width="100" height="50">
+                            <div class="icon">
+                                <a href="{{ $insta['permalink'] }}" target="_blank"><i class="flaticon-instagram-1"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                @endforeach
+                    @endforeach
+                @endif
             </div>
         </div>
     </div>
