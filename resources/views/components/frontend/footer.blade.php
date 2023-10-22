@@ -105,54 +105,16 @@
                 {{ GoogleTranslate::trans('Instagram', session()->get('locale')) }}
             </h3>
             <div class="row">
+                @foreach(CustomHelper::getInstagramFeed() ?? '' as $insta)
                 <div class="col-4">
                     <div class="instagram-img">
-                        <img src="assets/images/instagram/instagram-img-1.jpg" alt="Image">
+                        <img src="{{ $insta['media_url'] }}" alt="Image" width="100" height="50">
                         <div class="icon">
-                            <a href="#!" target="_blank"><i class="flaticon-instagram-1"></i></a>
+                            <a href="{{ $insta['permalink'] }}" target="_blank"><i class="flaticon-instagram-1"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="instagram-img">
-                        <img src="assets/images/instagram/instagram-img-2.jpg" alt="Image">
-                        <div class="icon">
-                            <a href="#!" target="_blank"><i class="flaticon-instagram-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="instagram-img">
-                        <img src="assets/images/instagram/instagram-img-3.jpg" alt="Image">
-                        <div class="icon">
-                            <a href="#!" target="_blank"><i class="flaticon-instagram-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="instagram-img">
-                        <img src="assets/images/instagram/instagram-img-4.jpg" alt="Image">
-                        <div class="icon">
-                            <a href="#!" target="_blank"><i class="flaticon-instagram-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="instagram-img">
-                        <img src="assets/images/instagram/instagram-img-5.jpg" alt="Image">
-                        <div class="icon">
-                            <a href="#!" target="_blank"><i class="flaticon-instagram-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="instagram-img">
-                        <img src="assets/images/instagram/instagram-img-6.jpg" alt="Image">
-                        <div class="icon">
-                            <a href="#!" target="_blank"><i class="flaticon-instagram-1"></i></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
