@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Hash;
 use GoogleTranslate;
 use DB;
 use Auth;
+use App\Models\InstagramFeed;
 
 class CustomHelper{
 
@@ -43,13 +44,17 @@ class CustomHelper{
 
 	public static function getInstagramFeed(){
         $fields = "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username";
-        $token = "IGQWRPYXBUWnlUam9mOXVhRVprYWVJYnVxeDVxNlM3Y05NbGNGbWYwUUh4UnpEWjhjbDRFUkljcHZAhTWh3ZAjBRejE3QWpINHNVNTNtZA1RQMkhpVks0c2hGWWtlUUFyYVl6akszVmxPdTZAIQ3FCczRrRW43andUR0kZD";
+        $token = "IGQWRPYk1jQ21iR29yTGJxRmY1TlJwdXBvckVOdWpyQVRMd2hyRlB0d29Gd29MdGlZAbDlZAM1FoNUtxQTBmWDNrMFhLWHN2akdjTlQ4V0JhSW1RRm1CNElGb0VzX293bURKSVdrQ2tLRDlpdWdlMHJXMGVIc01Vd00ZD";
         $limit = 12;
          
         $json_feed_url="https://graph.instagram.com/me/media?fields={$fields}&access_token={$token}&limit={$limit}";
         $json_feed = @file_get_contents($json_feed_url);
         $data =  json_decode($json_feed, true, 512, JSON_BIGINT_AS_STRING);
         return isset($data['data']) ? $data['data'] : '';
+	}
+
+	static function getInstagramFeeds(){
+		return InstagramFeed::select('media_url','permalink')->latest()->take(9)->get();
 	}
 
 }
