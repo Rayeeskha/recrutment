@@ -5,9 +5,7 @@
     <div class="col-lg-3 col-sm-6">
         <div class="single-footer-widget footer-logo-area">
             <a href="/"><img src="assets/images/white-logo.png" alt="Logo"></a>
-            <p>It is a long established fact that wo will
-            be distracted by the readable content as
-            when looking at its layout.</p>
+            <p>@lang('front.company')</p>
             <div class="social-content">
                 <ul>
                     
@@ -30,7 +28,7 @@
     <div class="col-lg-3 col-sm-6">
         <div class="single-footer-widget footer-address-area">
             <h3>
-                {{ GoogleTranslate::trans('Address Information', session()->get('locale')) }}
+                @lang('front.address')
             </h3>
             <ul>
                 <li>
@@ -38,7 +36,7 @@
                         <i class="flaticon-phone-call-1"></i>
                     </div>
                     <p>
-                        {{ GoogleTranslate::trans('Call Us Now', session()->get('locale')) }}
+                        @lang('front.call_us_now')
                     </p>
                     <a href="tel:+0408886666">+040 888 6666</a>
                 </li>
@@ -47,7 +45,7 @@
                         <i class="flaticon-mail"></i>
                     </div>
                     <p>
-                        {{ GoogleTranslate::trans('Email Address', session()->get('locale')) }}
+                        @lang('front.eml_add')
                     </p>
                     <a href="mailto:info@msgroupoftravels.com"><span class="__cf_email__" data-cfemail="553d3039393a151c273c26307b363a38">info@msgroupoftravels.com</span></a>
                 </li>
@@ -56,9 +54,11 @@
                         <i class="flaticon-place"></i>
                     </div>
                     <p>
-                        {{ GoogleTranslate::trans('Address', session()->get('locale')) }}
+                        @lang('front.address')
                     </p>
-                    <span>Shop No.7, Ground Floor,Patel Apartment, C wing 233/234 Bellasis Road, Nagpada, Mumbai - 400008</span>
+                    <span>
+                        @lang('front.shop_address')
+                    </span>
                 </li>
             </ul>
         </div>
@@ -66,31 +66,32 @@
     <div class="col-lg-3 col-sm-6">
         <div class="single-footer-widget footer-useful-links-area">
             <h3>
-                {{ GoogleTranslate::trans('Useful Links', session()->get('locale')) }}
+                @lang('front.useful_links')
             </h3>
             <div class="link-list">
                 <ul>
                     <li>
                         <i class="ri-arrow-right-s-line"></i>
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('about-us', session()->get('locale')))) }}"> {{ GoogleTranslate::trans('About Us', session()->get('locale')) }}
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.about_us')))}}">    @lang('front.about_us')
                         </a>
                     </li>
                     <li>
                         <i class="ri-arrow-right-s-line"></i>
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('internal-source', session()->get('locale')))) }}">
-                            {{ GoogleTranslate::trans('Internal Employment Source', session()->get('locale')) }}
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.inrnal_empl_src'))) }}">
+                            @lang('front.inrnal_empl_src')
                         </a>
                     </li>
                     <li>
                         <i class="ri-arrow-right-s-line"></i>
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('external-source', session()->get('locale')))) }}">
-                            {{ GoogleTranslate::trans('External Employment Source', session()->get('locale')) }}
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.extrnal_src')
+                        ))}}">
+                            @lang('front.extrnal_src')
                         </a>
                     </li>
                     <li>
                         <i class="ri-arrow-right-s-line"></i>
                         <a href="#!">
-                            {{ GoogleTranslate::trans('Contact us', session()->get('locale')) }}
+                            @lang('front.cnts_us')
                         </a>
                     </li>
                 </ul>
@@ -100,7 +101,7 @@
     <div class="col-lg-3 col-sm-6">
         <div class="single-footer-widget footer-instagram-area">
             <h3>
-                {{ GoogleTranslate::trans('Instagram', session()->get('locale')) }}
+                @lang('front.insta')
             </h3>
             <div class="row">
                 @php $instagram = CustomHelper::getInstagramFeeds(); @endphp
@@ -127,7 +128,10 @@
  <!--Start Copy Right Area-->
 <div class="copy-right-area">
     <div class="container">
-        <p>© <span> {{ GoogleTranslate::trans('MS Group Of Travels', session()->get('locale')) }}  |</span>   {{ GoogleTranslate::trans('All Rights Reserved | Website Developed by', session()->get('locale')) }}<a href="https://khanrayees.com/" target="_blank"> {{ GoogleTranslate::trans('khan Rayees', session()->get('locale')) }}</a></p>
+        <p>© <span>
+            @lang('front.company')
+              |</span> @lang('front.all_rsvd_wbs_dvlp')<a href="https://khanrayees.com/" target="_blank">
+                @lang('front.khan_rayees')</a></p>
     </div>
 </div>
 <!--End Copy Right Area-->

@@ -27,59 +27,59 @@
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
                         <a href="/" class="nav-link">
-                            {{ GoogleTranslate::trans('Home', session()->get('locale')) }}
+                            @lang('front.home')
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('about-us', session()->get('locale')))) }}" class="nav-link">
-                            {{ GoogleTranslate::trans('About Us', session()->get('locale')) }}
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.about_us'))) }}" class="nav-link">
+                            @lang('front.about_us')
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('our-services', session()->get('locale')))) }}" class="nav-link dropdown-toggle">
-                            {{ GoogleTranslate::trans('Our Services', session()->get('locale')) }}
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.our_services'))) }}" class="nav-link dropdown-toggle">
+                            @lang('front.our_services')
                         </a>
 
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('the-best recruitment-office-in-india', session()->get('locale')))) }}" class="nav-link">
-                                    {{ GoogleTranslate::trans('The best recruitment office India', session()->get('locale')) }}
+                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.the_bst_rcrt_ofc_ind'))) }}" class="nav-link">
+                                    @lang('front.the_bst_rcrt_ofc_ind')
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('office-recruitment india-riyadh', session()->get('locale')))) }}" class="nav-link">
-                                    {{ GoogleTranslate::trans('Office recruitment India Riyadh', session()->get('locale')) }}
+                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.ofc_rcrt_ind_rdh'))) }}" class="nav-link">
+                                    @lang('front.ofc_rcrt_ind_rdh')
                                 </a>
                             </li>                
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('agency', session()->get('locale')))) }}" class="nav-link">
-                            {{ GoogleTranslate::trans('agency', session()->get('locale')) }}
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.agency'))) }}" class="nav-link">
+                            @lang('front.agency')
                         </a>
                     </li>
                     
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="nav-link dropdown-toggle">
-                            {{ GoogleTranslate::trans('Employment Source', session()->get('locale')) }}            
+                            @lang('front.empl_src')
                         </a>
 
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('internal-source', session()->get('locale')))) }}" class="nav-link">
-                                    {{ GoogleTranslate::trans('Internal Employment Source', session()->get('locale')) }}
+                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.intrl_empl_src'))) }}" class="nav-link">
+                                    @lang('front.intrl_empl_src')
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('external-source', session()->get('locale')))) }}" class="nav-link">
-                                    {{ GoogleTranslate::trans('External Employment Source', session()->get('locale')) }}
+                                <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.extrnl_empl_src'))) }}" class="nav-link">
+                                    @lang('front.extrnl_empl_src')
                                 </a>
                             </li>                 
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(GoogleTranslate::trans('our-clients', session()->get('locale')))) }}" class="nav-link">
-                            {{ GoogleTranslate::trans('Our Clients', session()->get('locale')) }}
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.our_clients'))) }}" class="nav-link">
+                            @lang('front.our_clients')
                         </a>
                     </li>
                     <!-- <li class="nav-item">
@@ -94,7 +94,8 @@
                                 <i class="flaticon-phone-call-1"></i>
                             </div></a>
                             <div class="content">
-                                <p>{{ GoogleTranslate::trans('Call Us Now', session()->get('locale')) }}
+                                <p>
+                                    @lang('front.call_us_now')
                                 </p>
                                 <a href="tel:8299352134">+91 8299352134</a>
                             </div>
@@ -102,7 +103,7 @@
                     </div>
                     <div class="option-item">
                         <a href="#!" class="default-btn btn ">
-                            {{ GoogleTranslate::trans('Contact us', session()->get('locale')) }}
+                            @lang('front.cnts_us')
                             <i class="ri-arrow-right-line"></i>
                         </a>
                     </div>
@@ -140,7 +141,7 @@
                     </div>
                     <div class="option-item">
                         <a href="javascript:void(0)" class="default-btn btn ">
-                            {{ GoogleTranslate::trans('Contact us', session()->get('locale')) }}
+                            @lang('front.cnts_us')
                         </a>
                     </div>
                     <div class="option-item style2">

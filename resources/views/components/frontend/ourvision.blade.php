@@ -11,10 +11,11 @@
                             </div>
                             <div class="col-md-9 col-sm-12">
                                 <h1 style="color: #fff">
-                                    {{ GoogleTranslate::trans('Our Vision', session()->get('locale')) }}
+                                    @lang('front.our_vision')
                                 </h1>
                                 <p style="color: #fff;font-style: italic;font-size: 16px">
-                                    {{ GoogleTranslate::trans('To have leadership in the field of developing human resources operations for companies and institutions of all sizes at the local and regional levels.', session()->get('locale')) }}
+
+                                    @lang('front.vision_title')
                                 </p>
                             </div>
                         </div>                        
@@ -30,10 +31,10 @@
                             </div>
                             <div class="col-md-9 col-sm-12">
                                 <h1 style="color: #fff">
-                                    {{ GoogleTranslate::trans('Our Mission', session()->get('locale')) }}
+                                    @lang('front.our_mission')
                                 </h1>
                                 <p style="color: #fff; font-style: italic;font-size: 16px">
-                                    {{ GoogleTranslate::trans('Achieving the highest quality levels in the field of human resources that we offer to customers by using the best international practices under the supervision of professional cadres.', session()->get('locale')) }}
+                                    @lang('front.mission_title')
                                 </p>
                             </div>
                         </div>

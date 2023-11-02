@@ -12,7 +12,7 @@
                     <div class="content">
                         <i class="ri-user-voice-line"></i>
                         <p>
-                            {{ GoogleTranslate::trans('Welcome To MS Group Of Travels', session()->get('locale')) }}
+                            @lang('front.wlcm_ms_grp')
                         </p>
                     </div>
                 </div>

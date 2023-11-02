@@ -4,7 +4,7 @@
 			<a href="#!">
 				<div style="background-image: url('{{ asset('assets/images/persional/web/intern.jpg') }}');width: 100%;height: 400px; background-repeat: no-repeat;">
 					<h1 style="padding-top: 40%;margin-left: 30px; ">
-						{{ GoogleTranslate::trans('Internal Source', session()->get('locale')) }}
+						@lang('front.intrl_src')
 					</h1>
 				</div>
 			</a>
@@ -13,7 +13,7 @@
 			<a href="#!">
 				<div style="background-image: url('{{ asset('assets/images/persional/web/extern.jpg') }}');width: 100%;height: 400px; background-repeat: no-repeat;">			
 					<h1 style="padding-top: 40%;margin-left: 30px; ">
-						{{ GoogleTranslate::trans('External Source', session()->get('locale')) }}
+						@lang('front.extrnl_source')
 					</h1>
 				</div>
 			</a>

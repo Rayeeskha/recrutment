@@ -3,7 +3,7 @@
 <div class="container">
 <div class="section-title">
     <h2>
-        {{ GoogleTranslate::trans('Our basic Values', session()->get('locale')) }}
+        @lang('front.our_basic_value')
     </h2>
 </div>
 <div class="row justify-content-center">
@@ -15,7 +15,8 @@
             <div class="team-content">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <p class="ptag">{{ GoogleTranslate::trans('Working on creating new standards.', session()->get('locale')) }}
+                        <p class="ptag">
+                            @lang('front.working_creating')
                         </p>
                     </div>
                 </div>
@@ -31,7 +32,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Integrity, confidentiality and maintaining customers data.', session()->get('locale')) }}
+                            @lang('front.integrating_conf')
                         </p>
                     </div>
                 </div>
@@ -47,7 +48,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Passion and ambition to reach innovation.', session()->get('locale')) }}
+                            @lang('front.passion_on_ambination')
                         </p>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Challenging the current conditions to make customers happy.', session()->get('locale')) }}
+                            @lang('front.challanging_curr')
                         </p>
                     </div>
                 </div>

@@ -4,12 +4,13 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="banner-content-two">
-                    <span>Build Your Innovation & Digital Future</span>
-                    <h1>We Build Products That Help Businesses Lead</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus, dignissim vitae risus non, imperdiet lorem. Sed ut lacus aliquet, volutpat sem pellentesque, egestas nisl.</p>
+                    <span>@lang('front.company')</span>
+                    <h1>@lang('front.company')</h1>
+                    <p>@lang('front.company_title')</p>
                     <div class="banner-btn">
-                        <a href="contact-us.html" class="default-btn btn active mr-20">Contact Us <i class="ri-arrow-right-line"></i></a>
-                        <a href="about-us.html" class="default-btn btn">Explore More <i class="ri-arrow-right-line"></i></a>
+                        <a href="contact-us.html" class="default-btn btn active mr-20">
+                            @lang('front.cnts_us')<i class="ri-arrow-right-line"></i></a>
+                        <a href="#!" class="default-btn btn">@lang('front.expl_more')<i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
             </div>

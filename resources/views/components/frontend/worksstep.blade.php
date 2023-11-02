@@ -3,7 +3,7 @@
 <div class="container">
 <div class="section-title">
     <h2>
-        {{ GoogleTranslate::trans('Work Steps', session()->get('locale')) }}
+        @lang('front.work_step')
     </h2>
 </div>
 <div class="row justify-content-center">
@@ -16,7 +16,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Submission of the application.', session()->get('locale')) }}
+                            @lang('front.submission_of_apl')
                         </p>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Communication with the customer.', session()->get('locale')) }}
+                            @lang('front.com_wth_cust')
                         </p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Application Evaluation.', session()->get('locale')) }}
+                            @lang('front.apl_evl')
                         </p>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Giving an offer price and communication.', session()->get('locale')) }}
+                            @lang('front.gvn_prc_nd_cmn')
                         </p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Finishing the contracting procedures.', session()->get('locale')) }}
+                            @lang('front.fnsh_the_cnt_prcd')
                         </p>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Signing the contract.', session()->get('locale')) }}
+                            @lang('front.sng_the_cnst')
                         </p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Commencement of recruitment procedures.', session()->get('locale')) }}
+                            @lang('front.cmnt_of_rc_proc')
                         </p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Update on employment developments.', session()->get('locale')) }}
+                            @lang('front.updt_empl_dvlmnts')
                         </p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <p class="ptag">
-                            {{ GoogleTranslate::trans('Handing over the labor to the customer.', session()->get('locale')) }}
+                            @lang('front.hnding_ovr_lb_cust')
                         </p>
                     </div>
                 </div>

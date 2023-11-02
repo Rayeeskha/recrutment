@@ -1,31 +1,31 @@
 <?php 
 namespace App\Helpers;
 use Illuminate\Support\Facades\Hash;
-use GoogleTranslate;
 use DB;
 use Auth;
 use App\Models\InstagramFeed;
+use Lang;
 
 class CustomHelper{
 
 	static function urlSlugFilter($slug = ''){
 		$heading = [
-			CustomHelper::seoUrl(GoogleTranslate::trans('our-services', session()->get('locale'))) => 'our_services',
+			CustomHelper::seoUrl(Lang::get('front.our_services')) => 'our_services',
 
-			CustomHelper::seoUrl(GoogleTranslate::trans('the-best recruitment-office-in-india', session()->get('locale'))) => 'recruitment_office',
+			CustomHelper::seoUrl(Lang::get('front.the_bst_rcrt_ofc_ind')) => 'recruitment_office',
 
-			CustomHelper::seoUrl(GoogleTranslate::trans('office-recruitment india-riyadh', session()->get('locale'))) => 'office_recruitment',
+			CustomHelper::seoUrl(Lang::get('front.ofc_rcrt_ind_rdh')) => 'office_recruitment',
 
-			CustomHelper::seoUrl(GoogleTranslate::trans('internal-source', session()->get('locale'))) => 'internal_employement_source',
+			CustomHelper::seoUrl(Lang::get('front.inrnal_empl_src')) => 'internal_employement_source',
 
-			CustomHelper::seoUrl(GoogleTranslate::trans('external-source', session()->get('locale'))) => 'external_employement_source',
+			CustomHelper::seoUrl(Lang::get('front.extrnl_empl_src')) => 'external_employement_source',
 
-			CustomHelper::seoUrl(GoogleTranslate::trans('about-us', session()->get('locale'))) => 'about_us',
+			CustomHelper::seoUrl(Lang::get('front.about_us')) => 'about_us',
 
-			CustomHelper::seoUrl(GoogleTranslate::trans('our-clients', session()->get('locale'))) => 'our_clients',
-			CustomHelper::seoUrl(GoogleTranslate::trans('agency', session()->get('locale'))) => 'agency'
+			CustomHelper::seoUrl(Lang::get('front.our_clients')) => 'our_clients',
+
+			CustomHelper::seoUrl(Lang::get('front.agency')) => 'agency'
 		];
-
 		$slug = trim($slug);
         if(array_key_exists($slug, $heading)){
             return $heading[$slug];

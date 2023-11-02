@@ -13,10 +13,10 @@
                     <div class="col-lg-6">
                         <div class="choose-title">
                             <h2>
-                                {{ GoogleTranslate::trans('What Distinguishes Us', session()->get('locale')) }}
+                                @lang('front.what_distinguishes')
                             </h2>
                             <p class="ptag">
-                                {{ GoogleTranslate::trans('There are many advantages and benefits that can be obtained by dealing with Safa HR Consultant LLP, and there is more than one reason for you to Work With us, including:', session()->get('locale')) }}
+                                @lang('front.distingues_title')
                             </p>
                         </div>
                         <div class="choose-content pr-15">
@@ -27,7 +27,7 @@
                                             <span>01</span>
                                         </div>
                                         <h3>
-                                            {{ GoogleTranslate::trans('We have a team of employees who are distinguished in providing services.', session()->get('locale')) }}
+                                            @lang('front.dist_1')
                                         </h3>
                                      </li>
                                     <li>
@@ -35,7 +35,7 @@
                                             <span>02</span>
                                         </div>
                                         <h3>
-                                            {{ GoogleTranslate::trans('Helping major institutions to apply human resource technology.', session()->get('locale')) }}
+                                            @lang('front.dist_2')
                                         </h3>
                                     </li>
                                     <li>
@@ -43,7 +43,7 @@
                                             <span>03</span>
                                         </div>
                                         <h3>
-                                            {{ GoogleTranslate::trans('Training services for employees to master the work.', session()->get('locale')) }}
+                                            @lang('front.dist_3')
                                         </h3>
                                     </li>
                                 </ul>

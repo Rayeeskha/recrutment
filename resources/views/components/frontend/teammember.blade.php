@@ -2,7 +2,9 @@
 <div class="team-area pb-70">
 <div class="container">
     <div class="section-title">
-        <span>Meet The Team</span>
+        <span>
+            @lang('front.meet_the_team')
+        </span>
         <h2>Professional Creative Members</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus, dignissim phareta lorem. Sed ut lacus aliquet, volutpat sem pellentesque, egestas nisl.</p>
     </div>
