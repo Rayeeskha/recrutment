@@ -2,7 +2,7 @@
 <div class="services-area  "><br><br>
     <div class="container">        
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6">&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="card" style="background-color: #314e8a; height:260px;">
                     <div class="card-body">
                         <div class="row">
@@ -21,8 +21,8 @@
                         </div>                        
                     </div>
                 </div>
-            </div>&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="card" style="background-color: #109f43; height:260px;">
                     <div class="card-body">
                         <div class="row">
