@@ -1,6 +1,6 @@
 <!--Start Banner Area-->
 <div class="banner-style-two-area">
-    <div class="container-fluid">
+    <div class="container-fluid" dir="ltr">
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="banner-content-two">
@@ -8,7 +8,7 @@
                     <h1>@lang('front.company')</h1>
                     <p>@lang('front.company_title')</p>
                     <div class="banner-btn">
-                        <a href="contact-us.html" class="default-btn btn active mr-20">
+                        <a href="javascript:void(0)" class="default-btn btn active mr-20">
                             @lang('front.cnts_us')<i class="ri-arrow-right-line"></i></a>
                         <a href="#!" class="default-btn btn">@lang('front.expl_more')<i class="ri-arrow-right-line"></i></a>
                     </div>

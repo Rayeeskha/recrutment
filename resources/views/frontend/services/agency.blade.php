@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title', GoogleTranslate::trans('agency', session()->get('locale')))
-@section('meta_keywords', GoogleTranslate::trans('agency', session()->get('locale')))
-@section('meta_description',  GoogleTranslate::trans('agency', session()->get('locale')))
+@section('page_title', Lang::get('services.agency'))
+@section('meta_keywords', Lang::get('services.agency'))
+@section('meta_description',  Lang::get('services.agency'))
 @section('container')
 
 <div class="page-header-area bg-f4fbf6">
@@ -9,10 +9,10 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="page-header-content">
-                    <h1>{{ GoogleTranslate::trans('agency', session()->get('locale')) }}</h1>
+                    <h1>@lang('services.agency')</h1>
                     <ul>
-                        <li><a href="/">{{ GoogleTranslate::trans('Home', session()->get('locale')) }}</a></li>
-                        <li>{{ GoogleTranslate::trans('agency', session()->get('locale')) }}</li>
+                        <li><a href="/">@lang('front.home')</a></li>
+                        <li>@lang('services.agency')</li>
                     </ul>
                 </div>
             </div>
@@ -34,7 +34,7 @@
 <div class="service-details-area pt-100 pb-70">
     <div class="container">
     	<center>
-    		<h1>{{ GoogleTranslate::trans('agency', session()->get('locale')) }}</h1>
+    		<h1>@lang('services.agency')</h1>
     	</center>
     	<div class="row">
     		<div class="col-md-2"> </div>

@@ -1,15 +1,21 @@
 <!-- Start Navbar Area --> 
+<style type="text/css">
+    .logo_style{width: 50px; height: 50px}
+</style>
+
+@php $lang = session()->get('locale') == 'en' ? 'ar' : 'en'; @endphp
+
 <div class="navbar-area">
 <div class="mobile-responsive-nav">
-    <div class="container">
+    <div class="container" dir="ltr">
         <div class="mobile-responsive-menu">
             <div class="logo">
                 <a href="/">
-                    <img src="{{ asset('assets/images/logo-icon-1.png') }}" class="logo-icon-1" alt="logo">
-                    <img src="{{ asset('assets/images/logo-icon-2.png') }}" class="logo-icon-2" alt="logo">
+                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="logo-icon-1 logo_style" alt="logo">
+                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="logo-icon-2 logo_style" alt="logo">
                     
-                    <img src="{{ asset('assets/images/logo.png') }}" class="main-logo" alt="logo">
-                    <img src="{{ asset('assets/images/white-logo.png') }}" class="white-logo" alt="logo">
+                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="main-logo logo_style" alt="logo">
+                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="white-logo logo_style" alt="logo">
                 </a>
             </div>
         </div>
@@ -20,8 +26,8 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="/">
-                <img src="{{ asset('assets/images/logo.png') }}" class="main-logo" alt="logo">
-                <img src="{{ asset('assets/images/white-logo.png') }}" class="white-logo" alt="logo">
+                <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="main-logo logo_style" alt="logo">
+                <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="white-logo logo_style" alt="logo">
             </a>
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
@@ -116,7 +122,6 @@
                         </div>
                     </div>
                     <div class="option-item">
-                        @php $lang = session()->get('locale') == 'en' ? 'ar' : 'en'; @endphp
                         <a href="{{ route('changeLang', $lang) }}">{{ $lang }}</a>
                     </div>
                 </div>
@@ -129,6 +134,13 @@
     <div class="container">
         <div class="dot-menu">
             <div class="inner">
+
+                @if($lang == 'ar')
+                <div class="option-item">
+                    <a href="{{ route('changeLang', $lang) }}">{{ $lang }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                @endif
+
                 <div class="others-options style2 ms-auto">
                     <div class="option-item">
                         <div class="header-contact-box">
@@ -139,11 +151,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="option-item">
-                        <a href="javascript:void(0)" class="default-btn btn ">
-                            @lang('front.cnts_us')
-                        </a>
-                    </div>
+                    
                     <div class="option-item style2">
                         <div class="switch-box">
                             <label id="switch2" class="switch">
@@ -152,8 +160,13 @@
                             </label>
                         </div>
                     </div>
-
                 </div>
+
+                @if($lang == 'en')
+                <div class="option-item" dir="ltr">
+                    <a href="{{ route('changeLang', $lang) }}">{{ $lang }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                @endif
             </div>
         </div>
     </div>

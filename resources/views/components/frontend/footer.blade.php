@@ -1,10 +1,10 @@
 <!--Start Footer Area-->
-<div class="start-footer-area pt-100 pb-70">
+<div class="start-footer-area pt-100 pb-70" >
 <div class="container">
 <div class="row">
     <div class="col-lg-3 col-sm-6">
         <div class="single-footer-widget footer-logo-area">
-            <a href="/"><img src="assets/images/white-logo.png" alt="Logo"></a>
+            <a href="/"><img src="{{ asset('assets/images/logo/msgroup_logo_1.png') }}" alt="Logo" width="120" height="70"></a>
             <p>@lang('front.company')</p>
             <div class="social-content">
                 <ul>

@@ -85,8 +85,6 @@ return [
 
 	'home' => 'Home',
 
-	'about_us' => 'About us',
-
 	'our_services' => 'Our Services',
 
 	'the_bst_rcrt_ofc_ind' => 'The best recruitment office India',

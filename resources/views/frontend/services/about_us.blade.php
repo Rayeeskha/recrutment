@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title', GoogleTranslate::trans('About us', session()->get('locale')))
-@section('meta_keywords', GoogleTranslate::trans('About us', session()->get('locale')))
-@section('meta_description',  GoogleTranslate::trans('About us', session()->get('locale')))
+@section('page_title', Lang::get('front.about_us'))
+@section('meta_keywords', Lang::get('front.about_us'))
+@section('meta_description',  Lang::get('front.about_us'))
 @section('container')
 
 <div class="page-header-area bg-f4fbf6">
@@ -9,10 +9,10 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="page-header-content">
-                    <h1>{{ GoogleTranslate::trans('About us', session()->get('locale')) }}</h1>
+                    <h1>@lang('front.about_us')</h1>
                     <ul>
-                        <li><a href="/">{{ GoogleTranslate::trans('Home', session()->get('locale')) }}</a></li>
-                        <li>{{ GoogleTranslate::trans('About us', session()->get('locale')) }}</li>
+                        <li><a href="/">@lang('front.home')</a></li>
+                        <li>@lang('front.about_us')</li>
                     </ul>
                 </div>
             </div>
@@ -44,8 +44,11 @@
         	</div>
 
         	<div class="col-md-6">
-        		<h1>About Us</h1>
-        		<p style="font-style: italic;font-size: 16px">{{ GoogleTranslate::trans("Ms group of international specialized in providing unique solutions with more than 10 years of experience to help employees obtain jobs in major companies and institutions to achieve a qualitative leap in the daily operations and workflow within all departments, which contributes in increasing productivity, so we offer comprehensive human resources solutions that are in line with the objectives of companies and businesses, and we develop them with the development of the times and the development of existing projects on the ground actually, we are a consulting company in the field of technology and operations with the help of a working team capable of keeping pace with positive and sustainable changes in order to help our customers face various challenges that keep pace and meet market requirements.", session()->get('locale')) }}</p>
+        		<h1>@lang('front.about_us')</h1>
+        		<p style="font-style: italic;font-size: 16px">@lang('about.about_title1')
+        			&nbsp;&nbsp;
+        			@lang('about.about_title2')
+        		</p>
         	</div>
         </div>
         <!-- Our Vision -->
@@ -53,26 +56,31 @@
 
 		<div class="row">
 			<div class="col-md-6">
-				<h1>{{ GoogleTranslate::trans('Our Goals', session()->get('locale')) }}</h1>
+				<h1>@lang('about.our_goals')</h1>
 
 				<p style="font-style: italic;font-size: 16px">
-					{{ GoogleTranslate::trans('We work to offer a set of solutions in the field of human resources in order to help you develop skills in a set of fields, and among our goals:', session()->get('locale')) }}
+					@lang('about.our_goals')
+					@lang('about.about_title3')
 				</p>
 
 				<p style="font-style: italic;font-size: 16px">
-					{{ GoogleTranslate::trans('Working to raise the level of production', session()->get('locale')) }}
+					@lang('about.about_title3')
+					@lang('about.about_title4')
 				</p>
 
 				<p style="font-style: italic;font-size: 16px">
-					{{ GoogleTranslate::trans('Determining employee success standards.', session()->get('locale')) }}
+					@lang('about.about_title4')
+					@lang('about.about_title5')
 				</p>
 
 				<p style="font-style: italic;font-size: 16px">
-					{{ GoogleTranslate::trans('working to enhance the effectiveness of human resource management.', session()->get('locale')) }}
+					@lang('about.about_title5')
+					@lang('about.about_title6')
 				</p>
 
 				<p style="font-style: italic;font-size: 16px">
-					{{ GoogleTranslate::trans('Helping employees to achieve their goal.', session()->get('locale')) }}
+					@lang('about.about_title6')
+					@lang('about.about_title7')
 				</p>
 			</div>
 			<div class="col-md-6">
@@ -89,30 +97,35 @@
 		<div class="container-fluid" style="margin-top: 5%">
 			<div class="row" >
 				<div class="col-md-12">
-					<h1>{{ GoogleTranslate::trans('Why Choose Us?', session()->get('locale')) }}</h1>
+					<h1>
+					@lang('about.why_choose')</h1>
 
 					<p style="font-style: italic;font-size: 16px">
-						{{ GoogleTranslate::trans("Over the years, MS International have achieving great successes in the field of employment solutions and provide innovative strategies with the help of a team of specialists in various fields, and there are many reasons that contributed to our distinction and make you choose us, among them:", session()->get('locale')) }}
+
+						@lang('about.why_choose')
+						@lang('about.why_choose_title')
 					</p>
 
 					<p style="font-style: italic;font-size: 16px">
-						{{ GoogleTranslate::trans("Trust and good appreciation for all customers.", session()->get('locale')) }}
+						@lang('about.why_choose')
+						@lang('about.why_choose_title1')
+
 					</p>
 
 					<p style="font-style: italic;font-size: 16px">
-						{{ GoogleTranslate::trans("Our primary focus is on offering outstanding value to customers.", session()->get('locale')) }}
+						@lang('about.our_p_focus')
 					</p>
 
 					<p style="font-style: italic;font-size: 16px">
-						{{ GoogleTranslate::trans("Commitment to the frameworks of quality, innovation and excellence in service delivery.", session()->get('locale')) }}
+						@lang('about.our_p_focus1')
 					</p>
 
 					<p style="font-style: italic;font-size: 16px">
-						{{ GoogleTranslate::trans("Providing customers with the most comprehensive knowledge.", session()->get('locale')) }}
+						@lang('about.p_cust1')
 					</p>
 
 					<p style="font-style: italic;font-size: 16px">
-						{{ GoogleTranslate::trans("Striving for excellence in order to achieve the best results.", session()->get('locale')) }}
+						@lang('about.str_title')
 					</p>
 
 				</div>
@@ -122,30 +135,37 @@
 
 	<div style="margin-top: 5%">
 		<div class="container-fluid">
-			<h1>{{ GoogleTranslate::trans('Who is Sheikh Obaid Al-Ajmi?', session()->get('locale')) }}</h1>
+			<h1>
+				@lang('about.who_shaikh')</h1>
 
 			<p style="font-style: italic;font-size: 16px">
-				<span style="color: blue">{{ GoogleTranslate::trans('Sheikh Obaid bin Mufarrej Al-Ajmi,', session()->get('locale')) }}</span>
+				<span style="color: blue">
+					@lang('about.shaikh_obd')</span>
 
-				{{ GoogleTranslate::trans('is one of the well-known businessmen in the Arab world and in the world. He was known for many qualities, including humility, ambition and good morals, and he could get the agency of MS International in the Kingdom of Saudi Arabia.', session()->get('locale')) }}
+				@lang('about.businesses_inarab')
 			</p>
 
-			<h1>{{ GoogleTranslate::trans('About his Life', session()->get('locale')) }}</h1>
+			<h1>@lang('about.about_his_lfe')</h1>
 
 			<p style="font-style: italic;font-size: 16px">
-				{{ GoogleTranslate::trans('The birthplace of Sheikh / Obaid Al-Ajmi is the city of Makkah Al-Mukarramah in the Kingdom of Saudi Arabia, but he spent his life in the Taif city with his family of fourteen people, he was able to learn from his father many qualities, including perseverance and determination to achieve dreams and obtain what he desires, in addition to leadership and patience, and also learned fishing from him, despite his love for trade, and his unbridled desire to become one of the most important entrepreneurs inside and outside the Kingdom, and with the grace of God Almighty, he managed to reach that dream and then with good work, good planning, love and cooperation.', session()->get('locale')) }}
+				@lang('about.about_his_lfe')
+				@lang('about.about_his_lfe1')
+				@lang('about.about_his_lfe2')
 			</p>
 
 			<p style="font-style: italic;font-size: 16px">
-				{{ GoogleTranslate::trans('Among his hobbies, he was known to be a fan of visualization and a fan of hunting, which took him from his father, may God have mercy on him, in addition to his love for photography as well. His fame spread throughout, after he was able to establish a medical care group in the governorate of Taif and Bisha, and he was received by many senior state officials, including Major General Abdullah bin Turki Al-Qahtani, the Caliph Omar bin Al-Khattab’s Brigade for Private Security in the Taif city.', session()->get('locale')) }}
+				@lang('about.abt_lfe1')
+				@lang('about.abt_lfe2')
 			</p>
 
-			<h1>{{ GoogleTranslate::trans('Most Important Achievements', session()->get('locale')) }}</h1>
+			<h1>
+				@lang('about.most_imp_achv')</h1>
 
 			<p style="font-style: italic;font-size: 16px">
-				<span style="color: blue">{{ GoogleTranslate::trans('Sheikh / Obaid Al-Ajmi', session()->get('locale')) }}</span>
-
-				{{ GoogleTranslate::trans('started his working life since the fourteenth year of work, and his first start was in the sale of Al-Barshumi fruits, and he was able to open a small grocery store inside his home to earn a living, and with the support of those around him, he was able to open a private workshop, then he opened his first clinic, and from here came the real breakthrough towards achieving his ambition, and he was able to have a large number of clinics in scattered parts.', session()->get('locale')) }}
+				<span style="color: blue">
+					@lang('about.shekh_obd_ajmi')
+				</span>
+				@lang('about.shekh_obd_ajmi_ttl')
 			</p>
 		</div>
 	</div> 

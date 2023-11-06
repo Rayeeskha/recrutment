@@ -85,8 +85,6 @@ return [
 
 	'home' => 'بيت',
 
-	'about_us' => 'معلومات عناs',
-
 	'our_services' => 'خدماتنا',
 
 	'the_bst_rcrt_ofc_ind' => 'أفضل مكتب توظيف الهند',
