@@ -21,7 +21,7 @@
                         </div>                        
                     </div>
                 </div>
-            </div>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="col-md-6">
                 <div class="card" style="background-color: #109f43; height:260px;">
                     <div class="card-body">

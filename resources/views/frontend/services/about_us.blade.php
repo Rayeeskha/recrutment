@@ -38,7 +38,7 @@
         	<div class="col-md-6">
         		<div class="card">
         			<div class="card-body">
-        				<img src="{{ asset('assets/images/persional/web/aboutus.jpg') }}">
+        				<img src="{{ asset('assets/images/logo/msgroup_logo2.png') }}">
         			</div>
         		</div>
         	</div>
@@ -145,13 +145,13 @@
 				@lang('about.businesses_inarab')
 			</p>
 
-			<h1>@lang('about.about_his_lfe')</h1>
+			{{--<h1>@lang('about.about_his_lfe')</h1>
 
 			<p style="font-style: italic;font-size: 16px">
 				@lang('about.about_his_lfe')
 				@lang('about.about_his_lfe1')
 				@lang('about.about_his_lfe2')
-			</p>
+			</p> --}}
 
 			<p style="font-style: italic;font-size: 16px">
 				@lang('about.abt_lfe1')
@@ -163,9 +163,8 @@
 
 			<p style="font-style: italic;font-size: 16px">
 				<span style="color: blue">
-					@lang('about.shekh_obd_ajmi')
+					@lang('about.achv_title')
 				</span>
-				@lang('about.shekh_obd_ajmi_ttl')
 			</p>
 		</div>
 	</div> 

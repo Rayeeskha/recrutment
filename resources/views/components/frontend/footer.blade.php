@@ -38,7 +38,7 @@
                     <p>
                         @lang('front.call_us_now')
                     </p>
-                    <a href="tel:+0408886666">+040 888 6666</a>
+                    <a href="tel:8299352134">8299352134</a>
                 </li>
                 <li>
                     <div class="icon">

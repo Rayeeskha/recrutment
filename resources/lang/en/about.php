@@ -31,9 +31,9 @@ return [
 
 	'str_title' => 'Striving for excellence in order to achieve the best results.',
 
-	'who_shaikh' => 'Who is Sheikh Obaid Al-Ajmi?',
+	'who_shaikh' => 'Who is Abu turki ?',
 
-	'shaikh_obd' => 'Sheikh Obaid bin Mufarrej Al-Ajmi,',
+	'shaikh_obd' => 'Abu turki,',
 
 	'businesses_inarab' => 'is one of the well-known businessmen in the Arab world and in the world. He was known for many qualities, including humility, ambition and good morals, and he could get the agency of MS International in the Kingdom of Saudi Arabia.',
 
@@ -52,6 +52,8 @@ return [
 	'shekh_obd_ajmi' => 'Sheikh / Obaid Al-Ajmi',
 
 	'shekh_obd_ajmi_ttl' => 'started his working life since the fourteenth year of work, and his first start was in the sale of Al-Barshumi fruits, and he was able to open a small grocery store inside his home to earn a living, and with the support of those around him, he was able to open a private workshop, then he opened his first clinic, and from here came the real breakthrough towards achieving his ambition, and he was able to have a large number of clinics in scattered parts.',
+
+	'achv_title' => 'He build up a company al hajim door',
 
 
 ];
