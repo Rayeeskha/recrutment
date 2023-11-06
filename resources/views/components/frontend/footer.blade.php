@@ -1,5 +1,5 @@
 <!--Start Footer Area-->
-<div class="start-footer-area pt-100 pb-70" >
+<div class="start-footer-area pt-100 pb-70" dir="ltr">
 <div class="container">
 <div class="row">
     <div class="col-lg-3 col-sm-6">
