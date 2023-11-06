@@ -135,7 +135,7 @@
 
 	<div style="margin-top: 5%">
 		<div class="container-fluid">
-			<h1>
+			{{--<h1>
 				@lang('about.who_shaikh')</h1>
 
 			<p style="font-style: italic;font-size: 16px">
@@ -143,7 +143,7 @@
 					@lang('about.shaikh_obd')</span>
 
 				@lang('about.businesses_inarab')
-			</p>
+			</p> --}}
 
 			{{--<h1>@lang('about.about_his_lfe')</h1>
 
@@ -151,21 +151,20 @@
 				@lang('about.about_his_lfe')
 				@lang('about.about_his_lfe1')
 				@lang('about.about_his_lfe2')
-			</p> --}}
+			</p> 
 
 			<p style="font-style: italic;font-size: 16px">
 				@lang('about.abt_lfe1')
 				@lang('about.abt_lfe2')
-			</p>
+			</p>--}}
 
-			<h1>
-				@lang('about.most_imp_achv')</h1>
+			{{-- <h1> @lang('about.most_imp_achv')</h1> 
 
 			<p style="font-style: italic;font-size: 16px">
 				<span style="color: blue">
 					@lang('about.achv_title')
 				</span>
-			</p>
+			</p>--}}
 		</div>
 	</div> 
 </div>
