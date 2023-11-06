@@ -107,12 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="option-item">
-                        <a href="#!" class="default-btn btn ">
-                            @lang('front.cnts_us')
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
+                    &nbsp;&nbsp;&nbsp;
                     <div class="option-item">
                         <div class="switch-box">
                             <label id="switch" class="switch">

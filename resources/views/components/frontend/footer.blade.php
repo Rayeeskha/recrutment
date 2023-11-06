@@ -10,13 +10,13 @@
                 <ul>
                     
                     <li>
-                        <a href="#!" target="_blank"><i class="ri-facebook-line"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61552197280266&mibextid=LQQJ4d" target="_blank"><i class="ri-facebook-line"></i></a>
                     </li>
                     <li>
                         <a href="#!" target="_blank"><i class="ri-twitter-line"></i></a>
                     </li>
                     <li>
-                        <a href="#!" target="_blank"><i class="ri-instagram-line"></i></a>
+                        <a href="https://instagram.com/indian_recruitment1?utm_source=qr" target="_blank"><i class="ri-instagram-line"></i></a>
                     </li>
                     <li>
                         <a href="#!" target="_blank"><i class="ri-linkedin-line"></i></a>
