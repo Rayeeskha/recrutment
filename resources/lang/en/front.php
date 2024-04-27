@@ -1,9 +1,9 @@
 <?php
 
 return [
-	'company' => 'MS Group of Travels',
+	'company' => 'Ms tours group',
 
-	'company_title' =>'MS Group of travels is specialized in providing unique solutions with more than 15 years of experience to help employees obtain jobs in major companies and institutions.',
+	'company_title' =>'Ms tours group is specialized in providing unique solutions with more than 15 years of experience to help employees obtain jobs in major companies and institutions.',
 
 	'our_vision' => 'Our Vision',
 
@@ -25,7 +25,7 @@ return [
 
 	'what_distinguishes' => 'What Distinguishes Us',
 
-	'distingues_title' => 'There are many advantages and benefits that can be obtained by dealing with MS Group of travels, and there is more than one reason for you to Work With us, including:',
+	'distingues_title' => 'There are many advantages and benefits that can be obtained by dealing with Ms tours group, and there is more than one reason for you to Work With us, including:',
 
 	'dist_1' => 'We have a team of employees who are distinguished in providing services.',
 
@@ -77,7 +77,7 @@ return [
 
 	'insta' => 'Instagram',
 
-	'ms_grp_trvl' => 'MS Group Of Travels',
+	'ms_grp_trvl' => 'Ms tours group',
 
 	'all_rsvd_wbs_dvlp' => 'All Rights Reserved | Website Developed by',
 
@@ -101,7 +101,7 @@ return [
 
 	'our_clients' => 'Our Clients',
 
-	'wlcm_ms_grp' => 'Welcome To MS Group Of Travels',
+	'wlcm_ms_grp' => 'Welcome To Ms tours group',
 
 	'expl_more' => 'Explore More',
 
