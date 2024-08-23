@@ -8,6 +8,14 @@ use App\Http\Controllers\LangController;
 
 Route::get('/', HomeController::class)->name('home');
 
+Route::match(['POST','GET'],'best-recruitment-agencies-in-india-mumbai-and-newdelhi',  [HomeController::class, 'recruitmentAgencyMumbaiAndDelhi']);
+
+Route::match(['POST','GET'],'مكتب-استقدام-الهند-مومباي-و-نيو-دلهي',  [HomeController::class, 'recruitmentAgencyMumbaiAndDelhiArbic']);
+
+Route::match(['POST','GET'],'مكتب-استقدام-الهند-مومباي',  [HomeController::class, 'maktabIstakbal']);
+
+Route::match(['POST','GET'],'مكتب-استقدام-الهند',  [HomeController::class, 'maktabIstakbalAlhind']);
+
 
 Route::match(['POST','GET'],'{slug}',  [HomeController::class, 'urlRouting'])->name('urlRouting');
 

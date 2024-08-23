@@ -88,6 +88,37 @@
                             @lang('front.our_clients')
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+                            @lang('front.Blog')                           
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="{{ url('best-recruitment-agencies-in-india-mumbai-and-newdelhi') }}" class="nav-link">
+                                    @lang('front.rec_agency')
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ url('مكتب-استقدام-الهند-مومباي-و-نيو-دلهي') }}" class="nav-link">
+                                    @lang('front.ofc_ind_newdlhi')
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="{{ url('مكتب-استقدام-الهند-مومباي') }}" class="nav-link">
+                                    @lang('front.rec_ofc_ind_mum')
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{ url('مكتب-استقدام-الهند') }}" class="nav-link">
+                                    @lang('front.rec_ofc_ind')
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
                     <!-- <li class="nav-item">
                         <a href="contact-us.html" class="nav-link">Contact Us</a>
                     </li> -->

@@ -120,4 +120,16 @@ return [
 	'meet_the_team' =>'Meet The Team',
 
 	'shop_address' => 'Shop No.7, Ground Floor,Patel Apartment, C wing 233/234 Bellasis Road, Nagpada, Mumbai - 400008',
+	
+	'Blog' => 'Blog',
+
+	'rec_agency' => 'Agencies india mumbai and newdelhi',
+
+	'ofc_ind_newdlhi' => 'Recruitment Office India Mumbai and New Delh',
+
+	'rec_ofc_ind_mum' => 'Recruitment Office India Mumbai',
+
+	'rec_ofc_ind' => 'Recruitment Office India',
+
+
 ];
