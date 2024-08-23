@@ -2,7 +2,7 @@
 <div class="start-footer-area pt-100 pb-70" dir="ltr">
 <div class="container">
 <div class="row">
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-4 col-sm-6">
         <div class="single-footer-widget footer-logo-area">
             <a href="/"><img src="{{ asset('assets/images/logo/msgroup_logo_1.png') }}" alt="Logo" width="120" height="70"></a>
             <p>@lang('front.company')</p>
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-4 col-sm-6">
         <div class="single-footer-widget footer-address-area">
             <h3>
                 @lang('front.address')
@@ -63,7 +63,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-4 col-sm-6">
         <div class="single-footer-widget footer-useful-links-area">
             <h3>
                 @lang('front.useful_links')
@@ -98,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-sm-6">
+    {{-- <div class="col-lg-3 col-sm-6">
         <div class="single-footer-widget footer-instagram-area">
             <h3>
                 @lang('front.insta')
@@ -119,7 +119,7 @@
                 @endif
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 </div>
 </div>
