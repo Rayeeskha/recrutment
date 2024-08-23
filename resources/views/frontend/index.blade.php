@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title','MS Group Of Travels')
-@section('meta_keywords','MS Group Of Travels')
-@section('meta_description', 'MS Group Of Travels')
+@section('page_title','مكتب استقدام الهند - أفضل الخيارات في مومباي ونيودلهي')
+@section('meta_keywords','نقدم أفضل خدمات استقدام العمالة الهندية من مومباي ونيودلهي. عمالة ماهرة وخادمة منزلية. اتصل بنا الآن!     ')
+@section('meta_description', 'نقدم أفضل خدمات استقدام العمالة الهندية من مومباي ونيودلهي. عمالة ماهرة وخادمة منزلية. اتصل بنا الآن!     ')
 @section('container')
 
 <!-- Banner -->
