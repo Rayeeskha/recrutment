@@ -36,6 +36,10 @@ class HomeController extends Controller
         return view('frontend.services.maktab_istakbal_alhind');
     }
 
+    public function contactUsPage(){
+        return view('frontend.services.contact_us');
+    }
+
     public function contactUS(Contactus $request){
         $request->validated();
     	try {

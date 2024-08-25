@@ -90,7 +90,7 @@
                     </li>
                     <li>
                         <i class="ri-arrow-right-s-line"></i>
-                        <a href="#!">
+                        <a href="{{ url('contact-us') }}">
                             @lang('front.cnts_us')
                         </a>
                     </li>
