@@ -131,5 +131,19 @@ return [
 
 	'rec_ofc_ind' => 'Recruitment Office India',
 
+	'contact_us' => 'Contact us',
+
+	'name' => 'Name',
+
+	'email' =>'Email',
+
+	'phone' => 'Phone',
+
+	'Subject' => 'Subject',
+
+	'Message' => 'Message',
+
+	'contact_now' => 'Contact now',
+
 
 ];

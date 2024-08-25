@@ -59,4 +59,12 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <x-frontend.contactus />
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
 @endsection

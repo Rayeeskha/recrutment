@@ -25,6 +25,20 @@
         <!-- Ajaxchimp js -->    
         <script src="{{ asset('assets/js/ajaxchimp.min.js') }}"></script>
         <!--Custom js-->
+
+
+        <script src="{{ asset('backend/assets/js/common/validation.js') }}"></script> 
+        <script src="{{ asset('backend/assets/js/common/validate.min.js') }}"></script> 
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- Toaster Js Link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <script>let ajax = '{{ url('/') }}'</script>
+        <!-- Custom js -->
+        <script src="{{ asset('backend/assets/js/common/common_setup.js') }}"></script>
+        <script src="{{ asset('backend/assets/js/common/backend.js') }}"></script>
+
         <script src="{{ asset('assets/js/custom.js') }}"></script>
     </body>
 </html>
