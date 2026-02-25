@@ -1,9 +1,17 @@
 <!-- Start Navbar Area --> 
 <style type="text/css">
-    .logo_style{width: 50px; height: 50px}
+    .logo_style{width: 80px; height: 50px}
 </style>
 
-@php $lang = session()->get('locale') == 'en' ? 'ar' : 'en'; @endphp
+@php 
+    $lang = session()->get('locale') == 'en' ? 'ar' : 'en';
+
+    $logoPath = "assets/images/logo/logo.png";
+    if(session()->get('locale') === 'ar'){
+        $logoPath = "assets/images/logo/logo_ar.png";
+    }
+
+@endphp
 
 <div class="navbar-area">
 <div class="mobile-responsive-nav">
@@ -11,11 +19,11 @@
         <div class="mobile-responsive-menu">
             <div class="logo">
                 <a href="/">
-                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="logo-icon-1 logo_style" alt="logo">
-                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="logo-icon-2 logo_style" alt="logo">
+                    <img src="{{ asset($logoPath) }}" class="logo-icon-1 logo_style" alt="logo">
+                    <img src="{{ asset($logoPath) }}" class="logo-icon-2 logo_style" alt="logo">
                     
-                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="main-logo logo_style" alt="logo">
-                    <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="white-logo logo_style" alt="logo">
+                    <img src="{{ asset($logoPath) }}" class="main-logo logo_style" alt="logo">
+                    <img src="{{ asset($logoPath) }}" class="white-logo logo_style" alt="logo">
                 </a>
             </div>
         </div>
@@ -26,8 +34,8 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="/">
-                <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="main-logo logo_style" alt="logo">
-                <img src="{{ asset('assets/images/logo/msgroup_logo4.png') }}" class="white-logo logo_style" alt="logo">
+                <img src="{{ asset($logoPath) }}" class="main-logo logo_style" alt="logo">
+                <img src="{{ asset($logoPath) }}" class="white-logo logo_style" alt="logo">
             </a>
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
@@ -139,16 +147,16 @@
                         </div>
                     </div>
                     &nbsp;&nbsp;&nbsp;
-                    <div class="option-item">
+                    <!-- <div class="option-item">
                         <div class="switch-box">
                             <label id="switch" class="switch">
                                 <input type="checkbox" onchange="toggleTheme()" id="slider">
                                 <span class="slider round"></span>
                             </label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="option-item">
-                        <a href="{{ route('changeLang', $lang) }}">{{ $lang }}</a>
+                        <a href="{{ route('changeLang', $lang) }}" class="btn btn-sm btn-success">{{ $lang }}</a>
                     </div>
                 </div>
             </div>

@@ -15,13 +15,10 @@
 </div>
 @endif
 <!-- Partner -->
-{{--<x-frontend.partner /> --}}
 
 <!-- About us -->
 <x-frontend.aboutus />
 
-<!-- Services -->
-{{-- <x-frontend.services />--}}
 
 <!-- Our Vision -->
 <x-frontend.ourvision />
@@ -38,19 +35,9 @@
 <!-- Employee souce -->
 <x-frontend.employementsource />
 
-{{-- <!-- Start video -->
-<x-frontend.startvideo /> --}}
 
-<!-- Reviews -->
-{{--<x-frontend.review /> --}}
 
-<!-- Team member -->
-{{--<x-frontend.teammember /> --}}
-
-{{-- <!-- Blog -->
+<!-- Blog -->
 <x-frontend.blog />
-
-<!-- News Letter -->
-<x-frontend.newsletter /> --}}
 
 @endsection

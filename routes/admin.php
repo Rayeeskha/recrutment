@@ -6,7 +6,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 	Route::get('dashboard', DashboardController::class)->name('dashboard');
 
 	Route::resources([
-        'our-services' => \App\Http\Controllers\Backend\OurServicesController::class,
+        'contact-us' => \App\Http\Controllers\Backend\ContactUsController::class,
     ]);
 
 });	

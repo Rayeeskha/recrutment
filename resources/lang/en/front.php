@@ -145,5 +145,33 @@ return [
 
 	'contact_now' => 'Contact now',
 
+	'director_content' => 'The Managing Director of MS Tours Group brings extensive experience 
+                        in strategic management, workforce solutions, and corporate leadership, 
+                        ensuring operational excellence and sustainable growth across industries.',
+	
+	'manager_content' => 'The Marketing Manager leads brand strategy, market expansion, and 
+                        customer engagement initiatives, strengthening MS Tours Group’s 
+                        presence in regional and international markets.',
+	
+	'leadership_team' => 'Executive Leadership Team',
+
+	'leadership_team_description' => 'The Executive Leadership Team at MS Tours Group brings extensive industry expertise, strategic vision, and operational excellence to deliver reliable workforce solutions and business support services across regional and international markets.',
+
+	'vision_mission' => 'Our Vision & Mission',
+
+	'basic_value_desc' => 'Our core values guide our commitment to excellence, integrity, and sustainable business growth.',
+
+	'ms_tour_del' => 'MS Tours Group delivers professional workforce solutions, recruitment services, 
+                        and business support strategies designed to help companies grow efficiently 
+                        while maintaining operational excellence and long-term sustainability.',
+
+	'our_structured' => 'Our structured recruitment and workforce management process ensures transparency, efficiency, and long-term success for our clients.',
+
+	'ms_trust' => 'MS Group is a trusted Indian recruitment and workforce solutions company,
+                        connecting skilled professionals to Gulf countries with transparency,
+                        compliance, and efficiency.',
+
+	'managing_director' => 'Managing Director',
+
 
 ];

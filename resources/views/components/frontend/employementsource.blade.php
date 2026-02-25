@@ -1,22 +1,49 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-6" >
-			<a href="#!">
-				<div style="background-image: url('{{ asset('assets/images/persional/web/intern.jpg') }}');width: 100%;height: 400px; background-repeat: no-repeat;">
-					<h1 style="padding-top: 40%;margin-left: 30px; ">
-						@lang('front.intrl_src')
-					</h1>
-				</div>
-			</a>
-		</div>
-		<div class="col-md-6">
-			<a href="#!">
-				<div style="background-image: url('{{ asset('assets/images/persional/web/extern.jpg') }}');width: 100%;height: 400px; background-repeat: no-repeat;">			
-					<h1 style="padding-top: 40%;margin-left: 30px; ">
-						@lang('front.extrnl_source')
-					</h1>
-				</div>
-			</a>
-		</div>
-	</div>
-</div><br><br>
+<!-- ===== Recruitment Sources Section Start ===== -->
+<section class="recruitment-source-section pt-100 pb-100" aria-labelledby="recruitment-source-heading">
+    <div class="container">
+
+        <header class="text-center mb-5">
+            <h2 id="recruitment-source-heading" class="section-title">
+                Recruitment Sources
+            </h2>
+            <p class="section-subtitle">
+                We utilize both internal and external recruitment strategies to identify, evaluate, and deliver qualified talent efficiently.
+            </p>
+        </header>
+
+        <div class="row">
+
+            <!-- Internal Source -->
+            <div class="col-lg-6 mb-4">
+                <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.intrl_empl_src'))) }}" class="source-card" aria-label="Internal Recruitment Source">
+                    <div class="source-image">
+                        <img src="{{ asset('assets/images/persional/web/intern.jpg') }}"
+                             alt="Internal Recruitment Source"
+                             loading="lazy">
+                        <div class="overlay"></div>
+                        <div class="source-content">
+                            <h3>@lang('front.intrl_src')</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- External Source -->
+            <div class="col-lg-6 mb-4">
+                <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.extrnl_empl_src'))) }}" class="source-card" aria-label="External Recruitment Source">
+                    <div class="source-image">
+                        <img src="{{ asset('assets/images/persional/web/extern.jpg') }}"
+                             alt="External Recruitment Source"
+                             loading="lazy">
+                        <div class="overlay"></div>
+                        <div class="source-content">
+                            <h3>@lang('front.extrnl_source')</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ===== Recruitment Sources Section End ===== -->

@@ -1,144 +1,202 @@
-<!--Start Footer Area-->
-<div class="start-footer-area pt-100 pb-70" dir="ltr">
-<div class="container">
-<div class="row">
-    <div class="col-lg-4 col-sm-6">
-        <div class="single-footer-widget footer-logo-area">
-            <a href="/"><img src="{{ asset('assets/images/logo/msgroup_logo_1.png') }}" alt="Logo" width="120" height="70"></a>
-            <p>@lang('front.company')</p>
-            <div class="social-content">
-                <ul>
-                    
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=61552197280266&mibextid=LQQJ4d" target="_blank"><i class="ri-facebook-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="#!" target="_blank"><i class="ri-twitter-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/indian_recruitment1?utm_source=qr" target="_blank"><i class="ri-instagram-line"></i></a>
-                    </li>
-                    <li>
-                        <a href="#!" target="_blank"><i class="ri-linkedin-line"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-        <div class="single-footer-widget footer-address-area">
-            <h3>
-                @lang('front.address')
-            </h3>
-            <ul>
-                <li>
-                    <div class="icon">
-                        <i class="flaticon-phone-call-1"></i>
-                    </div>
-                    <p>
-                        @lang('front.call_us_now')
-                    </p>
-                    <a href="tel:8299352134">8299352134</a>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="flaticon-mail"></i>
-                    </div>
-                    <p>
-                        @lang('front.eml_add')
-                    </p>
-                    <a href="mailto:info@msgroupoftravels.com"><span class="__cf_email__" data-cfemail="553d3039393a151c273c26307b363a38">info@msgroupoftravels.com</span></a>
-                </li>
-                <li>
-                    <div class="icon">
-                        <i class="flaticon-place"></i>
-                    </div>
-                    <p>
-                        @lang('front.address')
-                    </p>
-                    <span>
-                        @lang('front.shop_address')
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-        <div class="single-footer-widget footer-useful-links-area">
-            <h3>
-                @lang('front.useful_links')
-            </h3>
-            <div class="link-list">
-                <ul>
-                    <li>
-                        <i class="ri-arrow-right-s-line"></i>
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.about_us')))}}">    @lang('front.about_us')
-                        </a>
-                    </li>
-                    <li>
-                        <i class="ri-arrow-right-s-line"></i>
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.inrnal_empl_src'))) }}">
-                            @lang('front.inrnal_empl_src')
-                        </a>
-                    </li>
-                    <li>
-                        <i class="ri-arrow-right-s-line"></i>
-                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.extrnal_src')
-                        ))}}">
-                            @lang('front.extrnal_src')
-                        </a>
-                    </li>
-                    <li>
-                        <i class="ri-arrow-right-s-line"></i>
-                        <a href="{{ url('contact-us') }}">
-                            @lang('front.cnts_us')
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    {{-- <div class="col-lg-3 col-sm-6">
-        <div class="single-footer-widget footer-instagram-area">
-            <h3>
-                @lang('front.insta')
-            </h3>
-            <div class="row">
-                @php $instagram = CustomHelper::getInstagramFeeds(); @endphp
-                @if(isset($instagram[0]))
-                    @foreach($instagram ?? '' as $insta)
-                    <div class="col-4">
-                        <div class="instagram-img">
-                            <img src="{{ $insta->media_url }}" alt="Image" width="100" height="50">
-                            <div class="icon">
-                                <a href="{{ $insta->permalink }}" target="_blank"><i class="flaticon-instagram-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                @endif
-            </div>
-        </div>
-    </div> --}}
-</div>
-</div>
-</div>
-<!--End Footer Area-->
+<!-- ===== Premium Footer Start ===== -->
+ @php 
+    $logoPath = "assets/images/logo/logo.png";
+    if(session()->get('locale') === 'ar'){
+        $logoPath = "assets/images/logo/logo_ar.png";
+    }
 
- <!--Start Copy Right Area-->
-<div class="copy-right-area">
+@endphp
+
+<footer class="premium-footer" itemscope itemtype="https://schema.org/Organization">
+
     <div class="container">
-        <p>© <span>
-            @lang('front.company')
-              |</span> @lang('front.all_rsvd_wbs_dvlp')<a href="https://khanrayees.com/" target="_blank">
-                @lang('front.khan_rayees')</a></p>
-    </div>
-</div>
-<!--End Copy Right Area-->
+        <div class="row align-items-start">
 
-<!-- Start Go Top Area -->
-<div class="go-top">
-    <i class="ri-rocket-line"></i>
-    <i class="ri-rocket-line"></i>
-</div>
-<!-- End Go Top Area -->
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6 mb-5">
+                <div class="footer-box">
+
+                    <a href="/" class="footer-logo">
+                        <img src="{{ asset($logoPath) }}"
+                             alt="MS Group Logo"
+                             width="140"
+                             loading="lazy"
+                             itemprop="logo">
+                    </a>
+
+                    <p class="footer-text" itemprop="description">
+                        @lang('front.ms_trust')
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="ri-linkedin-line"></i></a>
+                        <a href="https://instagram.com/indian_recruitment1" target="_blank"><i class="ri-instagram-line"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61552197280266" target="_blank"><i class="ri-facebook-line"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 mb-5">
+                <div class="footer-box">
+                    <h4>@lang('front.useful_links')</h4>
+                    <ul class="footer-links">
+                        <li><a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.about_us'))) }}">
+                            @lang('front.about_us')</a></li>
+
+                        <li><a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.inrnal_empl_src'))) }}">
+                            @lang('front.inrnal_empl_src')</a></li>
+
+                        <li><a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.extrnal_src'))) }}">
+                            @lang('front.extrnal_src')</a></li>
+
+                        <li><a href="{{ url('contact-us') }}">
+                            @lang('front.cnts_us')</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-4 col-md-6 mb-5">
+                <div class="footer-box">
+                    <h4>@lang('front.address')</h4>
+
+                    <div class="footer-contact">
+                        <p><strong>@lang('front.call_us_now'):</strong>
+                            <a href="tel:8299352134" itemprop="telephone">8299352134</a></p>
+
+                        <p><strong>@lang('front.eml_add'):</strong>
+                            <a href="mailto:info@msgroupoftravels.com" itemprop="email">
+                                info@msgroupoftravels.com
+                            </a></p>
+
+                        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <strong>@lang('front.address'):</strong><br>
+                            <span itemprop="streetAddress" class="streetAddress">
+                                @lang('front.shop_address')
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <div class="container text-center">
+            <p>
+                © {{ date('Y') }} @lang('front.company') |
+                @lang('front.all_rsvd_wbs_dvlp')
+                <a href="https://khanrayees.com/" target="_blank">
+                    @lang('front.khan_rayees')
+                </a>
+            </p>
+        </div>
+    </div>
+
+</footer>
+<!-- ===== Premium Footer End ===== -->
+
+<style>
+    .streetAddress {
+        color:white
+    }
+    .premium-footer {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #d1d5db;
+    padding-top: 90px;
+}
+
+.footer-box {
+    padding-right: 20px;
+}
+
+.footer-logo img {
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+}
+
+.footer-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #ffffff;
+    position: relative;
+}
+
+.footer-box h4::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #22c55e;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #22c55e;
+}
+
+.footer-contact p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer-contact a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #22c55e;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 18px;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #22c55e;
+}
+
+.footer-bottom {
+    background: #0b1220;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.footer-bottom a {
+    color: #22c55e;
+    text-decoration: none;
+}
+</style>

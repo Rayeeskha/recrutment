@@ -20,13 +20,13 @@
             <div class="col-lg-8 col-md-8">
                 <div class="heder-right-content">
                     <div class="row align-items-center">
-                        <div class="col-lg-9 col-md-7">
-                            <div class="time-content">
+                        <div class="col-lg-7 col-md-7">
+                            <!-- <div class="time-content">
                                 <i class="ri-time-line"></i>
                                 <p>Sun-Thu: 10am to 7pm - Sat-Fri: Closed</p>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="col-lg-3 col-md-5">
+                        <div class="col-lg-5 col-md-5">
                             <div class="social-content">
                                 <ul>
                                     <li>

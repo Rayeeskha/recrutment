@@ -1,48 +1,57 @@
-<!--Start Services Area-->
-<div class="services-area  "><br><br>
-    <div class="container">        
-        <div class="row">
-            <div class="col-md-6">&nbsp;&nbsp;&nbsp;&nbsp;
-                <div class="card" style="background-color: #314e8a; height:260px;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-12">
-                                <img src="{{ asset('assets/images/persional/shared-vision-1.png') }}" width="100px" height="100px">
-                            </div>
-                            <div class="col-md-9 col-sm-12">
-                                <h1 style="color: #fff">
-                                    @lang('front.our_vision')
-                                </h1>
-                                <p style="color: #fff;font-style: italic;font-size: 16px">
+<!-- ===== Vision & Mission Section Start ===== -->
+<section class="vision-mission-section ptb-100" aria-labelledby="vision-mission-heading">
+    <div class="container">
 
-                                    @lang('front.vision_title')
-                                </p>
-                            </div>
-                        </div>                        
+        <header class="text-center mb-5">
+            <h2 id="vision-mission-heading" class="section-title">
+                @lang('front.vision_mission')
+            </h2>
+        </header>
+
+        <div class="row">
+
+            <!-- Vision -->
+            <div class="col-lg-6 mb-4">
+                <article class="vm-card vision-card" itemscope itemtype="https://schema.org/CreativeWork">
+
+                    <div class="vm-icon">
+                        <img src="{{ asset('assets/images/persional/shared-vision-1.png') }}"
+                             alt="Company Vision"
+                             loading="lazy">
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6">&nbsp;&nbsp;&nbsp;&nbsp;
-                <div class="card" style="background-color: #109f43; height:260px;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-12">
-                                <img src="{{ asset('assets/images/persional/message.png') }}" width="100px" height="100px">
-                            </div>
-                            <div class="col-md-9 col-sm-12">
-                                <h1 style="color: #fff">
-                                    @lang('front.our_mission')
-                                </h1>
-                                <p style="color: #fff; font-style: italic;font-size: 16px">
-                                    @lang('front.mission_title')
-                                </p>
-                            </div>
-                        </div>
-                        
+
+                    <div class="vm-content">
+                        <h3 itemprop="name">@lang('front.our_vision')</h3>
+                        <p itemprop="description">
+                            @lang('front.vision_title')
+                        </p>
                     </div>
-                </div>
+
+                </article>
             </div>
-        </div><br><br>
+
+            <!-- Mission -->
+            <div class="col-lg-6 mb-4">
+                <article class="vm-card mission-card" itemscope itemtype="https://schema.org/CreativeWork">
+
+                    <div class="vm-icon">
+                        <img src="{{ asset('assets/images/persional/message.png') }}"
+                             alt="Company Mission"
+                             loading="lazy">
+                    </div>
+
+                    <div class="vm-content">
+                        <h3 itemprop="name">@lang('front.our_mission')</h3>
+                        <p itemprop="description">
+                            @lang('front.mission_title')
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+
+        </div>
+
     </div>
-</div> 
-<!--End Services Area-->
+</section>
+<!-- ===== Vision & Mission Section End ===== -->
