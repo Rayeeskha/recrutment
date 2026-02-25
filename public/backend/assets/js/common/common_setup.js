@@ -55,9 +55,9 @@ $(function() {
                 error: function (response) {
                     $('.formPreloader').hide();
                     let errors = response.responseJSON.errors;
-                    $.each(errors, function(i, v) {
-                        toastr.error(v[0], 'Opps!');
-                    });
+                    // $.each(errors, function(i, v) {
+                    //     toastr.error(v[0], 'Opps!');
+                    // });
                     $.each(errors, function(key, value) {
                         console.log('.Err' + key, value[0]);
                         $('.Err' + key).text(value[0]);
