@@ -173,5 +173,15 @@ return [
 
 	'managing_director' => 'Managing Director',
 
+	'trusted_india' => 'Trusted Indian Recruitment & Manpower Supply Company Connecting Skilled Professionals to Gulf Countries',
+
+	'contact_us_desc' => 'Connect with MS Group – Trusted Indian Recruitment Partner for Gulf Countries',
+
+	'recruitment_source' => 'Recruitment Sources',
+
+	'we_utilize' => 'We utilize both internal and external recruitment strategies to identify, evaluate, and deliver qualified talent efficiently.',
+
+	'enquiry' => 'Hello! I have an enquiry.',
+
 
 ];

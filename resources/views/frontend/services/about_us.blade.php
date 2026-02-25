@@ -10,6 +10,7 @@
 	$aboutBanner = "assets/images/img/about_banner.png";
     if(session()->get('locale') === 'ar'){
         $aboutPath = "assets/images/img/about_ar.png";
+		$aboutBanner = "assets/images/img/about_banner_ar.png";
     }
 
 @endphp
@@ -28,19 +29,10 @@
                 </h1>
 
                 <p class="hero-subtitle">
-                    Trusted Indian Recruitment & Manpower Supply Company Connecting Skilled Professionals to Gulf Countries
+                   @lang('front.trusted_india')
                 </p>
 
-                <nav aria-label="breadcrumb">
-    <ol class="breadcrumb hero-breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="{{ url('/') }}">@lang('front.home')</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-            @lang('front.about_us')
-        </li>
-    </ol>
-</nav>
+            
             </div>
 
             <div class="col-lg-5 text-center">
@@ -142,115 +134,7 @@
 </section>
 
 <!-- ===== Contact Section ===== -->
-<section class="contact-section py-5 bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <x-frontend.contactus />
-            </div>
-        </div>
-    </div>
-</section>
+<x-frontend.contactus />
 
 @endsection
 
-<style>
-
-/* ===== HERO SECTION ===== */
-
-.about-hero-section::before {
-    content: "";
-    position: absolute;
-    left: -150px;
-    top: -150px;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(34,197,94,0.25), transparent 70%);
-    z-index: 0;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at right, rgba(34,197,94,0.15), transparent 60%);
-}
-
-.min-vh-50 {
-    min-height: 420px;
-}
-
-.hero-title {
-    font-size: 52px;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 18px;
-    letter-spacing: 0.5px;
-}
-
-.hero-subtitle {
-    font-size: 20px;
-    line-height: 1.8;
-    color: #e5e7eb;
-    margin-bottom: 25px;
-}
-
-.hero-image {
-    max-height: 400px;
-    border-radius: 12px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.35);
-}
-
-.hero-breadcrumb {
-    background: transparent;
-    padding: 0;
-}
-
-.hero-breadcrumb .breadcrumb-item a {
-    color: #22c55e;
-    text-decoration: none;
-}
-
-.hero-breadcrumb .breadcrumb-item.active {
-    color: #ffffff;
-}
-
-	.main-title {
-    font-size: 42px;
-    font-weight: 700;
-    color: #111827;
-    margin-bottom: 15px;
-}
-
-.section-heading {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #111827;
-}
-
-.section-text {
-    font-size: 18px;
-    line-height: 1.9;
-    color: #374151;
-    margin-bottom: 20px;
-}
-
-.about-logo {
-    max-width: 250px;
-}
-
-.goals-section img {
-    max-height: 450px;
-    object-fit: cover;
-}
-
-.breadcrumb {
-    background: transparent;
-    padding: 0;
-}
-
-.breadcrumb-item a {
-    text-decoration: none;
-    color: #22c55e;
-}
-</style>

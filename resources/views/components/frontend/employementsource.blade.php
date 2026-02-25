@@ -4,10 +4,10 @@
 
         <header class="text-center mb-5">
             <h2 id="recruitment-source-heading" class="section-title">
-                Recruitment Sources
+                @lang('front.recruitment_source')
             </h2>
             <p class="section-subtitle">
-                We utilize both internal and external recruitment strategies to identify, evaluate, and deliver qualified talent efficiently.
+                @lang('front.we_utilize')
             </p>
         </header>
 

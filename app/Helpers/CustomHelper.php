@@ -57,4 +57,8 @@ class CustomHelper{
 		return InstagramFeed::select('media_url','permalink')->latest()->take(9)->get();
 	}
 
+	static function whatsAppNumber(){
+		return "+918299352134";
+	}
+
 }

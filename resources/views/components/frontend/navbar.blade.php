@@ -186,19 +186,19 @@
                         </div>
                     </div>
                     
-                    <div class="option-item style2">
+                    <!-- <div class="option-item style2">
                         <div class="switch-box">
                             <label id="switch2" class="switch">
                                 <input type="checkbox" onchange="toggleTheme()" id="slider2">
                                 <span class="slider round"></span>
                             </label>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 @if($lang == 'en')
                 <div class="option-item" dir="ltr">
-                    <a href="{{ route('changeLang', $lang) }}">{{ $lang }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="{{ route('changeLang', $lang) }}" class="btn btn-sm btn-success">{{ $lang }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
                 @endif
             </div>

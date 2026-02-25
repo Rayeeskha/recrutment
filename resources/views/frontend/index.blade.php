@@ -38,6 +38,6 @@
 
 
 <!-- Blog -->
-<x-frontend.blog />
+{{-- <x-frontend.blog /> --}}
 
 @endsection

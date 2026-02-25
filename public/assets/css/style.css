@@ -47,7 +47,14 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
+  overflow-x: clip;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+
 
 img {
   max-width: 100%;
@@ -6383,4 +6390,231 @@ html[dir="ltr"], html[dir="ltr"] body {
     left: 0;
     color: #22c55e;
     font-weight: bold;
+}
+
+
+/* ===== ABOUT US BLADE HERO SECTION ===== */
+/* ===== SAFE HERO FOR MOBILE ===== */
+
+.about-hero-section {
+    background: #20c99721;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden; /* Important */
+}
+
+.hero-overlay {
+    display: none; /* Disable gradient glow on mobile */
+}
+
+.min-vh-50 {
+    min-height: auto;
+}
+
+.hero-title {
+    font-size: 34px;
+    font-weight: 700;
+    /* color: #ffffff; */
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    /* color: #e2e8f0; */
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* ===== CONTACT US FORM CLEAN CONTACT ===== */
+
+.contact-section-clean {
+    background: #f8fafc;
+}
+
+.contact-card-clean {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.contact-title-clean {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.contact-subtitle-clean {
+    font-size: 15px;
+    color: #6b7280;
+}
+
+.clean-input {
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.clean-input:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 0 2px rgba(22,163,74,0.1);
+}
+
+.clean-btn {
+    background: #16a34a;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.clean-btn:hover {
+    background: #15803d;
+}
+
+
+/* FOOTER */
+.streetAddress {
+        color:white
+    }
+    .premium-footer {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #d1d5db;
+    padding-top: 90px;
+}
+
+.footer-box {
+    padding-right: 20px;
+}
+
+.footer-logo img {
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+}
+
+.footer-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #ffffff;
+    position: relative;
+}
+
+.footer-box h4::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #22c55e;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #22c55e;
+}
+
+.footer-contact p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer-contact a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #22c55e;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 18px;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #22c55e;
+}
+
+.footer-bottom {
+    background: #0b1220;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.footer-bottom a {
+    color: #22c55e;
+    text-decoration: none;
+}
+
+/* WHATSAPP FLOATING BUTTON */
+
+.whatsapp-float {
+    position: fixed !important; /* ensure fixed */
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 99999 !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 15px !important;
+        right: 15px !important;
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
 }
