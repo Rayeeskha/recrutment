@@ -8,10 +8,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="author" content="Rayees khan">
 
-    <meta name="keywords" content="@yield('meta_keywords','مكتب استقدام الهند - أفضل الخيارات في مومباي ونيودلهي')" />
+    <meta name="keywords" content="@yield('meta_keywords')" />
 
-    <meta name="description" content="@yield('meta_description','نقدم أفضل خدمات استقدام العمالة الهندية من مومباي ونيودلهي. عمالة ماهرة وخادمة منزلية. اتصل بنا الآن!')" />
-    <title>@yield('page_title',"مكتب استقدام الهند - أفضل الخيارات في مومباي ونيودلهي")</title>
+    <meta name="description" content="@yield('meta_description')" />
+    <title>@yield('page_title')</title>
     
     <link rel="canonical" href="{{url()->current()}}"/>
 
@@ -45,7 +45,5 @@
     <style type="text/css">
         .ptag{font-style: italic;font-size: 16px}
     </style>
-
-
 </head>
 <body>
