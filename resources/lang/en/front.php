@@ -220,4 +220,40 @@ return [
 
 	'why_shoose' => 'Why Choose MS Group?',
 
+	'contact_us_title' => 'Contact MS Group | Recruitment Agency in India',
+	'contact_us_meta' => 'Contact recruitment agency India, Mumbai recruitment office, New Delhi manpower agency, Gulf manpower supply contact',
+	'contact_ms_desc' => 'Contact MS Group – Trusted recruitment agency in India with offices in Mumbai and New Delhi. Professional manpower supply solutions for Gulf countries.',
+
+	'contact_us_heading' => 'Contact MS Group Recruitment',
+
+	'trusted_india' => 'Trusted Indian Recruitment Agency Serving Gulf Countries',
+
+	'call_us' => 'Call Us',
+
+	'email_us' => 'Email Us',
+	
+	'whatsapp' => 'WhatsApp',
+
+	'chat_on' => 'Chat on WhatsApp',
+
+	'new_delhi_office' => 'New Delhi Office',
+
+	'new_delhi_office_location' => '233/234, C Wing, 7th Floor,
+                        Nandlal Complex, Palasia Road,
+                        New Delhi, India',
+	
+	'mumbai_office' => 'Mumbai Office',
+
+	'why_global_trust' => 'Why Global Employers Trust MS Group',
+
+	'gov_app' => 'Government-approved recruitment agency connecting skilled Indian professionals 
+            to Gulf countries through transparent, ethical and compliant hiring processes.',
+	
+	'gov_lice' => '✔ Government Licensed',
+
+	'mumbai_office_f' => '✔ Mumbai & Delhi Offices',
+
+	'per' => '✔ 100% Transparent Recruitment',
+
+
 ];

@@ -8,7 +8,7 @@ use App\Http\Controllers\LangController;
 
 Route::get('/', HomeController::class)->name('home');
 
-Route::match(['POST','GET'],'contact-us',  [HomeController::class, 'contactUsPage']);
+Route::match(['POST','GET'],'contact-us',  [HomeController::class, 'contactUsPage'])->name('contact');
 
 Route::match(['POST','GET'],'contactus',  [HomeController::class, 'contactUS'])->name('contactus');
 

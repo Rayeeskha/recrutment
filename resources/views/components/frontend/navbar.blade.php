@@ -127,9 +127,9 @@
                             
                         </ul>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="contact-us.html" class="nav-link">Contact Us</a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a href="{{ route('contact') }}" class="nav-link">@lang('front.cnts_us')</a>
+                    </li>
                 </ul>
 
                 <div class="others-options style2 ms-auto">
@@ -146,15 +146,6 @@
                             </div>
                         </div>
                     </div>
-                    &nbsp;&nbsp;&nbsp;
-                    <!-- <div class="option-item">
-                        <div class="switch-box">
-                            <label id="switch" class="switch">
-                                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div> -->
                     <div class="option-item">
                         <a href="{{ route('changeLang', $lang) }}" class="btn btn-sm btn-success">{{ $lang }}</a>
                     </div>
@@ -186,14 +177,6 @@
                         </div>
                     </div>
                     
-                    <!-- <div class="option-item style2">
-                        <div class="switch-box">
-                            <label id="switch2" class="switch">
-                                <input type="checkbox" onchange="toggleTheme()" id="slider2">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div> -->
                 </div>
 
                 @if($lang == 'en')
