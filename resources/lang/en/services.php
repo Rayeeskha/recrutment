@@ -136,6 +136,18 @@ return [
 	"in_clusion" => "In conclusion, we at a recruitment office from India in Riyadh provide you with a number of wonderful services and advantages, where you only have to send a request for employment with the conditions you want, and we will undertake the task of sorting out a large number of Indian workers, choosing the most suitable of them, and arranging and coordinating everything until the arrival of the workers to you without any effort.",
 
 	"agency" => 'Agency',
+
+	'the_best_keyword' => 'best recruitment agency India, Gulf manpower supply, licensed recruitment company India, staffing solutions GCC',
+
+	'rec_desc' => 'MS Group is a licensed and accredited Indian recruitment company providing skilled manpower to Gulf countries across oil & gas, construction, healthcare, engineering and more.',
+
+	'rec_sub_title' => 'Trusted & Licensed Indian Recruitment Company Supplying Skilled Workforce to Gulf Countries',
+
+	'professional_office' => 'Professional Office-Based Recruitment Process in India for Gulf Employers',
+
+	'office_rec_keyword' => 'office recruitment India, manpower recruitment office India, Gulf recruitment process, Indian manpower supply GCC',
+
+	'office_rec_desc' => 'MS Group operates a licensed recruitment office in India providing structured manpower hiring and deployment services for Gulf countries with complete documentation and compliance.',
 ];
 
 ?>

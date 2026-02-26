@@ -6688,3 +6688,74 @@ html[dir="ltr"], html[dir="ltr"] body {
     font-weight: 600;
     margin-bottom: 15px;
 }
+
+/* OFFICE RECRUITMENT CSS */
+.service-hero {
+    background: #20c99721;
+    padding: 90px 0;
+    /* color: #fff; */
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    /* color: #e2e8f0; */
+    margin-bottom: 20px;
+}
+
+.section-block {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.section-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 15px;
+}
+
+.bg-light {
+    background: #f8fafc;
+}
+
+/* ===== PROCESS DESIGN ===== */
+
+.process-timeline {
+    display: grid;
+    gap: 30px;
+}
+
+.process-step {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: #22c55e;
+    color: #fff;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

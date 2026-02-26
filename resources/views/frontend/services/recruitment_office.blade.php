@@ -1,221 +1,177 @@
 @extends('frontend.layouts.app')
-@section('page_title', Lang::get('services.the_best'))
-@section('meta_keywords', Lang::get('services.the_best'))
-@section('meta_description',  Lang::get('services.the_best'))
+
+@section('page_title', __('services.the_best'))
+@section('meta_keywords',  __('services.the_best_keyword'))
+@section('meta_description',  __('services.rec_desc'))
+
 @section('container')
 
-<div class="page-header-area bg-f4fbf6">
+<!-- ===== HERO SECTION ===== -->
+<section class="services-hero">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6">
-                <div class="page-header-content">
-                    <h4>
-                        @lang('services.the_best')
-                    </h4>
-                    <ul>
-                        <li><a href="/">@lang('front.home') </a></li>
-                        <li>@lang('services.the_best')</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="page-header-image">
-                    <img src="{{ asset('assets/images/banner/banner-img-3.png') }}" alt="Image">
-                </div>
-            </div>
-        </div>
 
-        <div class="page-header-shape">
-            <img src="{{ asset('assets/images/shape/shape-8.png') }}" alt="Image">
-            <img src="{{ asset('assets/images/shape/shape-9.png') }}" alt="Image">
-            <img src="{{ asset('assets/images/shape/shape-10.png') }}" alt="Image">
+            <div class="col-lg-7">
+                <h1 class="hero-title">
+                    @lang('services.the_best')
+                </h1>
+
+                <p class="hero-subtitle">
+                    @lang('services.rec_sub_title')
+                </p>
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <img src="{{ asset('assets/images/img/recruitment.png') }}"
+                     alt="Licensed Indian Recruitment Company for Gulf Countries"
+                     class="img-fluid hero-image"
+                     loading="lazy">
+            </div>
+
         </div>
     </div>
-</div>
-
-<div class="service-details-area pt-100 pb-70">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="services-details-content">
-                    <div class="analysis-content">
-                        <h3>
-                            @lang('services.the_best')
-                        </h3>
-                    </div>
-                    <div class="service-description">
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.the_best_title')
-
-                            @lang('services.the_best_title1')
-
-                            </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="services-details-content">
-                    <div class="analysis-content">
-                        <h3>
-                            @lang('services.the_best')
-                        </h3>
-                    </div>
-                    <div class="service-description">
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.through_ofc')
-
-                            @lang('services.through_ofc1')
-                            @lang('services.bcz_we_are')
-                        </p>
-                    </div>
-                </div>
+</section>
 
 
-                <div class="services-details-content">
-                    <div class="analysis-content">
-                        <h3>
-                            @lang('services.accred_rec')
-                        </h3>
-                    </div>
-                    <div class="service-description">
-                        <p style="font-style: italic;font-size: 16px">
-                            @lang('services.we_r_dstg')
-                            @lang('services.we_got')
-                            @lang('services.thrg_the_cmp')
-                        </p>
-                    </div>
-                </div>
+<!-- ===== INTRODUCTION ===== -->
+<section class="section-block">
+    <div class="container">
+        <h2 class="section-title">@lang('services.the_best')</h2>
 
-                <div class="services-details-content">
-                    <div class="analysis-content">
-                        <h3>
-                            @lang('services.p_v_t_e')
-                        </h3>
-                    </div>
-                    <div class="service-description">
-                        <p style="font-style: italic;font-size: 16px">
+        <p class="section-text">
+            @lang('services.the_best_title')
+            @lang('services.the_best_title1')
+        </p>
 
-                            @lang('services.in_the_cmp')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.oil_nd_eng')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-                            @lang('services.contracting')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.Transport')</p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.trnd_edu')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.eng_sec')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.Security')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.agr_sctr')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.mntc_nd_opt')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.cleanliness')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.Telecommunications')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.the_real_sec')
-                        </p>
-                    </div>
-                </div>
+        <p class="section-text">
+            @lang('services.through_ofc')
+            @lang('services.through_ofc1')
+            @lang('services.bcz_we_are')
+        </p>
+    </div>
+</section>
 
 
-                <div class="services-details-content">
-                    <div class="analysis-content">
-                        <h3>
-                           @lang('services.stp_to_rec')
-                        </h3>
-                    </div>
-                    <div class="service-description">
-                        <p style="font-style: italic;font-size: 16px">
+<!-- ===== ACCREDITATION ===== -->
+<section class="section-block bg-light">
+    <div class="container">
+        <h2 class="section-title">@lang('services.accred_rec')</h2>
 
-                            @lang('services.the_rec_lbr')
-                        </p>
-
-                        <p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.lrg_nmb')
-						</p>
-
-						<p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.the_nmb')
-						</p>
-
-						<p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.the_r_sbj')
-						</p>
-
-						<p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.the_nxt_stp')
-						</p>
-
-						<p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.then_the_lbr')
-						</p>
-
-						<p style="font-style: italic;font-size: 16px">
-
-                            @lang('services.as_fr_the_lst')
-						</p>
+        <p class="section-text">
+            @lang('services.we_r_dstg')
+            @lang('services.we_got')
+            @lang('services.thrg_the_cmp')
+        </p>
+    </div>
+</section>
 
 
-						<p style="font-style: italic;font-size: 16px">
+<!-- ===== INDUSTRIES WE SERVE ===== -->
+<section class="section-block">
+    <div class="container">
+        <h2 class="section-title">@lang('services.p_v_t_e')</h2>
 
-                            @lang('services.tke_the_int')
-						</p>
-                    </div>
-                </div>
-            </div>
+        <div class="row g-4 industry-grid">
+
+            <div class="col-md-4"><div class="industry-box">@lang('services.oil_nd_eng')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.contracting')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.Transport')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.trnd_edu')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.eng_sec')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.Security')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.agr_sctr')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.mntc_nd_opt')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.cleanliness')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.Telecommunications')</div></div>
+            <div class="col-md-4"><div class="industry-box">@lang('services.the_real_sec')</div></div>
+
         </div>
     </div>
-</div>
+</section>
 
-<div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-        <x-frontend.contactus />
+
+<!-- ===== RECRUITMENT PROCESS ===== -->
+<section class="section-block bg-light">
+    <div class="container">
+        <h2 class="section-title">@lang('services.stp_to_rec')</h2>
+
+        <div class="process-steps">
+            <p>@lang('services.the_rec_lbr')</p>
+            <p>@lang('services.lrg_nmb')</p>
+            <p>@lang('services.the_nmb')</p>
+            <p>@lang('services.the_r_sbj')</p>
+            <p>@lang('services.the_nxt_stp')</p>
+            <p>@lang('services.then_the_lbr')</p>
+            <p>@lang('services.as_fr_the_lst')</p>
+            <p>@lang('services.tke_the_int')</p>
+        </div>
     </div>
-    <div class="col-md-3"></div>
-</div>
+</section>
+
+
+<x-frontend.contactus />
 
 @endsection
+
+<style>
+    .services-hero {
+    background: #20c99721;
+    padding: 90px 0;
+    /* color: #fff; */
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    /* color: #e2e8f0; */
+    margin-bottom: 20px;
+}
+
+.section-block {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.section-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 15px;
+}
+
+.bg-light {
+    background: #f8fafc;
+}
+
+.industry-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.industry-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.process-steps p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+</style>
