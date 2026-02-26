@@ -6925,3 +6925,63 @@ html[dir="ltr"], html[dir="ltr"] body {
     object-fit: contain;
 }
 
+
+/* CLIENT SECTION */
+.inner-hero {
+    background: linear-gradient(135deg, #f8fafc, #eef2f7);
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-top: 10px;
+}
+
+/* CLIENT CARDS */
+.client-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.client-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+.client-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* TRUST SECTION */
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    font-size: 16px;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.more-text {
+    font-weight: 600;
+    color: #111827;
+}
+

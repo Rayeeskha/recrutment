@@ -64,6 +64,19 @@ return [
 	'explore_tour' => 'Explore MS Group external employee sourcing strategies including job advertisements, campus hiring, employment agencies, interviews, and workforce exchange programs for Gulf recruitment.',
 
 	'strategic_external' => 'Strategic External Recruitment Channels for Hiring Skilled Professionals for Gulf Countries',
+
+	"our_client_title" => "Our Clients  | MS Tours Group",
+
+	'our_client_keyword' => 'Our recruitment clients, Gulf companies hiring from India, manpower supply clients, trusted recruitment partner',
+
+	'our_client_desc' => 'MS Group proudly serves leading Gulf companies by providing skilled Indian manpower across various industries. Trusted by top employers for reliable recruitment solutions.',
+
+	'trusted_by_leading' => 'Trusted by Leading Gulf Companies for Professional Manpower Solutions',
+
+	'why_global_comp' => 'Why Global Companies Trust MS Group',
+
+	'we_deliver_reliable' => 'We deliver reliable, transparent and compliant recruitment solutions 
+            connecting skilled Indian professionals with leading Gulf employers.',
 ];
 
 ?>
