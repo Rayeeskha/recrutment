@@ -56,6 +56,14 @@ return [
 	'internal_emp_desc' => 'Learn about MS Group internal employee sourcing strategies including promotion, rehire, transportation and workforce optimization for Gulf recruitment.',
 
 	'internal_emp_source' => 'Internal Employee Sourcing Strategies for Efficient Workforce Management',
+
+	"ext_emp_src_title" => "External Sources of Employment | MS Tours Group",
+
+	'external_rec_kwyword' => 'External recruitment sources, manpower hiring India, Gulf workforce recruitment, recruitment agency India',
+
+	'explore_tour' => 'Explore MS Group external employee sourcing strategies including job advertisements, campus hiring, employment agencies, interviews, and workforce exchange programs for Gulf recruitment.',
+
+	'strategic_external' => 'Strategic External Recruitment Channels for Hiring Skilled Professionals for Gulf Countries',
 ];
 
 ?>
