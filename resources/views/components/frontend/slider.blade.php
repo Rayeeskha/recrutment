@@ -18,10 +18,10 @@
                     </p>
 
                     <div class="exec-buttons">
-                        <a href="javascript:void(0)" class="exec-btn-primary">
+                        <a href="{{ route('contact') }}" class="exec-btn-primary">
                             @lang('front.cnts_us')
                         </a>
-                        <a href="#!" class="exec-btn-outline">
+                        <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.our_services'))) }}" class="exec-btn-outline">
                             @lang('front.expl_more')
                         </a>
                     </div>
