@@ -1,43 +1,70 @@
 @extends('frontend.layouts.app')
-@section('page_title','مكتب استقدام الهند - أفضل الخيارات في مومباي ونيودلهي')
-@section('meta_keywords','نقدم أفضل خدمات استقدام العمالة الهندية من مومباي ونيودلهي. عمالة ماهرة وخادمة منزلية. اتصل بنا الآن!     ')
-@section('meta_description', 'نقدم أفضل خدمات استقدام العمالة الهندية من مومباي ونيودلهي. عمالة ماهرة وخادمة منزلية. اتصل بنا الآن!     ')
+@section('page_title', __('front.rec_office_india'))
+@section('meta_keywords', __('front.rec_office_keyword'))
+@section('meta_description',  __('front.rec_office_desc'))
 @section('container')
 
-<!-- Banner -->
+<!-- ===== HERO SLIDER ===== -->
 <x-frontend.slider />
 
-@if(session()->get('locale') == 'ar')
-<div class="container mt-10 mb-10" dir="rtl">
-<h1>مكتب استقدام الهند</h1>
-  <h2>أفضل مكتب استقدام في مومباي ونيودلهي</h2>
-  <p>نحن متخصصون في <strong>استقدام العمالة الهندية</strong> من مدن مثل <strong>مومباي</strong> و<strong>نيودلهي</strong>. لدينا فريق عمل متمرس يضمن لك الحصول على أفضل الخدمات.</p>
-</div>
-@endif
-<!-- Partner -->
+<!-- ===== WHY WE ARE BEST (UPGRADED CARDS) ===== -->
+<section class="why-best-section">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">
+              @lang('front.why_shoose')               
+            </h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="icon-circle">✔</div>
+                    <h3>@lang('front.license_rec')</h3>
+                    <p>@lang('front.gov_approved')</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="icon-circle">📍</div>
+                    <h3>@lang('front.mumbai_delhi_office')</h3>
+                    <p>@lang('front.strategical_located')</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="icon-circle">🌍</div>
+                    <h3>@lang('front.specialiging_gulf')</h3>
+                    <p>@lang('front.we_spelize')</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 
 <!-- About us -->
 <x-frontend.aboutus />
 
-
 <!-- Our Vision -->
 <x-frontend.ourvision />
 
-<!-- Our Basic Value -->
+<!-- Core Values -->
 <x-frontend.basicvalue />
 
-<!-- Why choose -->
+<!-- Why Choose Us -->
 <x-frontend.whychooseus />
 
-<!-- Work step -->
+<!-- Recruitment Process -->
 <x-frontend.worksstep />
 
-<!-- Employee souce -->
+<!-- Employee Sources -->
 <x-frontend.employementsource />
-
-
-
-<!-- Blog -->
-{{-- <x-frontend.blog /> --}}
 
 @endsection

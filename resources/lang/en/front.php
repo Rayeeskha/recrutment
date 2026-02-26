@@ -191,5 +191,33 @@ return [
 
 	'services_heading' => 'Professional Indian Recruitment & Manpower Supply Services for Gulf Countries',
 
+	'rec_office_india' => 'Recruitment Agency in India | Best in Mumbai & New Delhi | MS Group',
+
+	'rec_office_keyword' => 'recruitment agency in India, manpower recruitment India, best recruitment agency Mumbai, top recruitment agency New Delhi, Gulf manpower supply India, overseas recruitment agency India, licensed recruitment agency Mumbai, Delhi manpower consultant, India to Gulf recruitment, international hiring agency India',
+
+	'rec_office_desc' => 'Top recruitment agency in India with offices in Mumbai and New Delhi. Specialized in Gulf manpower supply, overseas hiring, and workforce solutions.',
+
+	'rec_agency_heading' => 'Recruitment Agency in India – Trusted Manpower Supply to Gulf Countries',
+
+	'ms_leading' => 'MS Group is one of the leading recruitment agencies in India with offices in 
+            Mumbai and New Delhi, specializing in overseas manpower supply to Gulf countries 
+            including UAE, Saudi Arabia, Qatar, Kuwait, Oman, and Bahrain.',
+
+	'license_rec' => 'Licensed Recruitment Agency',
+
+	'gov_approved' => 'Government-approved and legally compliant recruitment solutions 
+                    connecting skilled Indian professionals to international employers.',
+					
+	'mumbai_delhi_office' => 'Mumbai & New Delhi Offices',
+
+	'strategical_located' => 'Strategically located recruitment offices in India’s major cities 
+                    ensuring efficient manpower sourcing and processing.',
+	
+	'specialiging_gulf' => 'Specialized Gulf Hiring',
+
+	'we_spelize' => 'We specialize in manpower supply for construction, oil & gas, 
+                    healthcare, engineering, hospitality, and industrial sectors.',	
+
+	'why_shoose' => 'Why Choose MS Group?',
 
 ];
