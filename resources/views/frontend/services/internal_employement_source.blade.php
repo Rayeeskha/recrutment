@@ -1,132 +1,91 @@
 @extends('frontend.layouts.app')
-@section('page_title', Lang::get('employee.inrnl_emp_src'))
-@section('meta_keywords',Lang::get('employee.inrnl_emp_src'))
-@section('meta_description', Lang::get('employee.inrnl_emp_src'))
+
+@section('page_title', __('employee.internal_emp_source_title'))
+@section('meta_keywords',  __('employee.internal_emp_keyword'))
+@section('meta_description',  __('employee.internal_emp_desc'))
+
 @section('container')
 
-<div class="page-header-area bg-f4fbf6">
+<!-- ===== HERO HEADER ===== -->
+<section class="inner-hero bg-light py-5">
+    <div class="container text-center">
+        <h1 class="hero-title">
+            @lang('employee.inrnl_emp_src')
+        </h1>
+        <p class="hero-subtitle">
+             @lang('employee.internal_emp_source')
+        </p>
+    </div>
+</section>
+
+
+<!-- ===== INTERNAL SOURCING SECTION ===== -->
+<section class="py-5">
     <div class="container">
-        <div class="row align-items-center">
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="info-card h-100">
+                    <div class="icon-box">
+                        <img src="{{ asset('assets/images/persional/web/promotion.png') }}" alt="Employee Promotion Strategy">
+                    </div>
+                    <h3>@lang('employee.promotion')</h3>
+                    <p>@lang('employee.they_r_drct')</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="info-card h-100">
+                    <div class="icon-box">
+                        <img src="{{ asset('assets/images/persional/web/retriess.png') }}" alt="Employee Retirement Replacement">
+                    </div>
+                    <h3>@lang('employee.retiress')</h3>
+                    <p>@lang('employee.in_the_evnt')</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="info-card h-100">
+                    <div class="icon-box">
+                        <img src="{{ asset('assets/images/persional/web/former_emp.png') }}" alt="Former Employee Rehiring">
+                    </div>
+                    <h3>@lang('employee.former_empl')</h3>
+                    <p>@lang('employee.form_empl_who')</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
             <div class="col-lg-6 col-md-6">
-                <div class="page-header-content">
-                    <h4>@lang('employee.inrnl_emp_src')</h4>
-                    <ul>
-                        <li><a href="/">@lang('front.home')</a></li>
-                        <li>@lang('employee.inrnl_emp_src')</li>
-                    </ul>
+                <div class="info-card h-100">
+                    <div class="icon-box">
+                        <img src="{{ asset('assets/images/persional/web/transporation.png') }}" alt="Transportation Workforce Planning">
+                    </div>
+                    <h3>@lang('employee.Transportation')</h3>
+                    <p>@lang('employee.some_empl_may')</p>
                 </div>
             </div>
+
+            <!-- Card 5 -->
             <div class="col-lg-6 col-md-6">
-                <div class="page-header-image">
-                    <img src="{{ asset('assets/images/banner/banner-img-3.png') }}" alt="Image">
+                <div class="info-card h-100">
+                    <div class="icon-box">
+                        <img src="{{ asset('assets/images/persional/web/advertisement.png') }}" alt="Internal Job Advertisement">
+                    </div>
+                    <h3>@lang('employee.indoor_adv')</h3>
+                    <p>@lang('employee.exstng_empl')</p>
                 </div>
             </div>
+
         </div>
 
-        <div class="page-header-shape">
-            <img src="{{ asset('assets/images/shape/shape-8.png') }}" alt="Image">
-            <img src="{{ asset('assets/images/shape/shape-9.png') }}" alt="Image">
-            <img src="{{ asset('assets/images/shape/shape-10.png') }}" alt="Image">
-        </div>
     </div>
-</div>
+</section>
 
-<div class="service-details-area pt-100 pb-70">
-    <div class="container-fluid">
-        <center>
-            <h1>@lang('employee.inrnl_emp_src')</h1>
-        </center>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="height: 250px">
-                    <div class="card-body">
-                        <center><img src="{{ asset('assets/images/persional/web/promotion.png') }}" style="height:50px;width:50px;border-radius: 50%">
-
-                            <h4>
-                                @lang('employee.promotion')
-
-                        </h4>
-                        </center>
-                        <p style="font-size: 16px;font-style: italic;">
-
-                            @lang('employee.they_r_drct')
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="height: 250px">
-                    <div class="card-body">
-                        <center><img src="{{ asset('assets/images/persional/web/retriess.png') }}" style="height:50px;width:50px;border-radius: 50%">
-                            <h4>
-                                @lang('employee.retiress')
-                            </h4>
-                        </center>
-                        <p style="font-size: 16px;font-style: italic;">
-
-                            @lang('employee.in_the_evnt')
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="height: 250px">
-                    <div class="card-body">
-                        <center><img src="{{ asset('assets/images/persional/web/former_emp.png') }}" style="height:50px;width:50px;border-radius: 50%">
-                            <h4>
-                                @lang('employee.former_empl')
-                            </h4>
-                        </center>
-                        <p style="font-size: 16px;font-style: italic;">
-
-                            @lang('employee.form_empl_who')
-                        </p>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="row" style="margin-top: 3%">
-            <div class="col-md-6">
-                <div class="card" style="height: 250px">
-                    <div class="card-body">
-                        <center><img src="{{ asset('assets/images/persional/web/transporation.png') }}" style="height:50px;width:50px;border-radius: 50%">
-                            <h4>
-                                @lang('employee.Transportation')
-                            </h4>
-                        </center>
-                        <p style="font-size: 16px;font-style: italic;">
-
-                            @lang('employee.some_empl_may')
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card" style="height: 250px">
-                    <div class="card-body">
-                        <center><img src="{{ asset('assets/images/persional/web/advertisement.png') }}" style="height:50px;width:50px;border-radius: 50%">
-                            <h4>
-                                @lang('employee.indoor_adv')
-                            </h4>
-                        </center>
-                        <p style="font-size: 16px;font-style: italic;">
-
-                            @lang('employee.exstng_empl')
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-        <x-frontend.contactus />
-    </div>
-    <div class="col-md-3"></div>
-</div>
+<x-frontend.contactus />
 
 @endsection
+

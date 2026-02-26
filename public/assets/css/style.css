@@ -6820,3 +6820,56 @@ html[dir="ltr"], html[dir="ltr"] body {
     box-shadow: 0 25px 60px rgba(0,0,0,0.08);
 }
 
+
+
+/* INTERNAL EMP SOURCE */
+.inner-hero {
+    background: #20c99721;
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-top: 10px;
+}
+
+/* CARD DESIGN */
+.info-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+.info-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.icon-box img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+

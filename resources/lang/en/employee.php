@@ -48,6 +48,14 @@ return [
 	"our_client" => "Our Clients",
 
 	'many_more' => "Many more...",
+
+	'internal_emp_source_title' => 'Internal sources of recruitment | MS Group Recruitment',
+
+	'internal_emp_keyword' => 'Internal recruitment, employee sourcing methods, manpower hiring India, Gulf recruitment agency',
+
+	'internal_emp_desc' => 'Learn about MS Group internal employee sourcing strategies including promotion, rehire, transportation and workforce optimization for Gulf recruitment.',
+
+	'internal_emp_source' => 'Internal Employee Sourcing Strategies for Efficient Workforce Management',
 ];
 
 ?>
