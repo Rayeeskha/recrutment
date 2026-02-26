@@ -1,103 +1,96 @@
 @extends('frontend.layouts.app')
-@section('page_title',Lang::get('front.our_services'))
-@section('meta_keywords', Lang::get('front.our_services'))
-@section('meta_description',  Lang::get('front.our_services'))
+
+@section('page_title', __('front.our_services_title'))
+@section('meta_keywords',  __('front.services_keyword'))
+@section('meta_description',  __('front.services_desc'))
+
 @section('container')
 
-<div class="page-header-area bg-f4fbf6">
+<!-- ===== HERO HEADER ===== -->
+<section class="services-hero-section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6">
-                <div class="page-header-content">
-                    <h1>
-                        @lang('front.our_services')
-                    </h1>
-                    <ul>
-                        <li><a href="/">
-                            @lang('front.home')
-                        </a></li>
-                        <li>@lang('front.our_services')</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="page-header-image">
-                    <img src="assets/images/banner/banner-img-3.png" alt="Image">
-                </div>
-            </div>
-        </div>
 
-        <div class="page-header-shape">
-            <img src="assets/images/shape/shape-8.png" alt="Image">
-            <img src="assets/images/shape/shape-9.png" alt="Image">
-            <img src="assets/images/shape/shape-10.png" alt="Image">
+            <div class="col-lg-6">
+                <h1 class="hero-title">
+                    @lang('front.our_services')
+                </h1>
+
+                <p class="hero-subtitle">
+                   @lang('front.services_heading')
+                </p>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <img src="{{ asset('assets/images/img/services.png') }}"
+                     alt="MS Group Recruitment Services India to Gulf"
+                     class="img-fluid hero-image"
+                     loading="lazy">
+            </div>
+
         </div>
     </div>
-</div>
+</section>
 
-<div class="service-details-area pt-100 pb-70">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="services-details-content">
-                    <div class="analysis-content">
-                        <h3>@lang('front.our_services')</h3>
-                    </div>
-                    <div class="service-description">
-                        <p style="font-style: italic;font-size: 16px">
-                            @lang('services.the_cmp')
+<!-- ===== INTRO SECTION ===== -->
+<section class="services-intro py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="section-heading">
+                @lang('front.our_services')
+            </h2>
+        </div>
+
+        <p class="section-text text-center">
+            @lang('services.the_cmp')
+        </p>
+    </div>
+</section>
+
+<!-- ===== SERVICES CARDS ===== -->
+<section class="services-cards-section pb-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-lg-6">
+                <div class="service-card">
+                    <img src="{{ asset('assets/images/persional/web/ind.servie.jpg') }}"
+                         alt="Business Sector Recruitment Services"
+                         class="img-fluid">
+
+                    <div class="service-card-body">
+                        <h3>@lang('services.bsn_sct')</h3>
+
+                        <p>
+                            @lang('services.we_r_working')
                         </p>
                     </div>
-                	<div class="row">
-                		<div class="col-md-6">
-                			<div class="card" style="height:550px">
-                				<div class="card-body">
-                					<img src="{{ asset('assets/images/persional/web/ind.servie.jpg') }}">
-                					<center>
-                						<h1>
-
-                                        @lang('services.bsn_sct')</h1>
-                						<p style="font-style: italic;font-size: 16px">
-
-                                            @lang('services.we_r_working')
-                                        </p>
-                					</center>
-                				</div>                				
-                			</div>
-                		</div>
-                		<div class="col-md-6">
-                			<div class="card" style="height:550px">
-                				<div class="card-body">
-                					<img src="{{ asset('assets/images/persional/web/business.jpg') }}">
-                					<center>
-                						<h1>
-
-                                            @lang('services.ind_sec_se')
-
-                                        </h1>
-
-                						<p style="font-style: italic;font-size: 16px">
-
-                                            @lang('services.we_r_prd')
-
-                                        </p>
-                					</center>
-                				</div>
-                			</div>
-                		</div>
-                	</div>
                 </div>
             </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-6">
+                <div class="service-card">
+                    <img src="{{ asset('assets/images/persional/web/business.jpg') }}"
+                         alt="Industrial Sector Staffing Solutions"
+                         class="img-fluid">
+
+                    <div class="service-card-body">
+                        <h3>@lang('services.ind_sec_se')</h3>
+
+                        <p>
+                            @lang('services.we_r_prd')
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+</section>
 
-<div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-        <x-frontend.contactus />
-    </div>
-    <div class="col-md-3"></div>
-</div>
+<!-- ===== CONTACT CTA ===== -->
+<x-frontend.contactus />
 
 @endsection

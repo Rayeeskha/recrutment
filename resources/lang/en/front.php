@@ -87,6 +87,8 @@ return [
 
 	'our_services' => 'Our Services',
 
+	'our_services_title' => 'Our Services | MS Group Recruitment & Manpower Supply',
+
 	'the_bst_rcrt_ofc_ind' => 'The best recruitment office India',
 
 	'ofc_rcrt_ind_rdh' => 'Office recruitment India Riyadh',
@@ -182,6 +184,12 @@ return [
 	'we_utilize' => 'We utilize both internal and external recruitment strategies to identify, evaluate, and deliver qualified talent efficiently.',
 
 	'enquiry' => 'Hello! I have an enquiry.',
+
+	'services_keyword' => 'Indian recruitment services, manpower supply to Gulf, HR outsourcing India, staffing solutions GCC',
+
+	'services_desc' => 'MS Group provides professional recruitment and manpower supply services connecting skilled Indian professionals to Gulf countries with reliable and compliant processes.',
+
+	'services_heading' => 'Professional Indian Recruitment & Manpower Supply Services for Gulf Countries',
 
 
 ];
