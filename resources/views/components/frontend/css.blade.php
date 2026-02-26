@@ -46,17 +46,6 @@
         .ptag{font-style: italic;font-size: 16px}
     </style>
 
+
 </head>
 <body>
-<!-- Pre Loader Start -->
-{{-- <div class="preloader clock text-center">
-    <div class="organiaLoader">
-        <div class="loaderO">
-        <span>M</span>
-        <span>S</span>
-        <span>G</span>
-        <span>T</span>
-        
-        </div>
-    </div>
-</div> --}}

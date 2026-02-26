@@ -148,6 +148,29 @@ return [
 	'office_rec_keyword' => 'office recruitment India, manpower recruitment office India, Gulf recruitment process, Indian manpower supply GCC',
 
 	'office_rec_desc' => 'MS Group operates a licensed recruitment office in India providing structured manpower hiring and deployment services for Gulf countries with complete documentation and compliance.',
+
+	"agency_title" => 'Agency | Licensed Recruitment Agency in India for Gulf',
+
+	'agency_keyword' => 'licensed recruitment agency India, manpower agency for Gulf countries, Indian staffing agency GCC, overseas recruitment India',
+
+	'agency_desc' => 'MS Group is a licensed Indian recruitment agency providing reliable manpower supply services to Gulf countries with full legal compliance and transparent processes.',
+
+	'official_license' => 'Official Licensed Recruitment Agency Connecting Indian Talent to Gulf Countries',
+
+	'gov_approved' => 'Government Approved Recruitment License',
+
+	'operate' => 'MS Group operates as a legally authorized recruitment agency in India,
+            approved to provide overseas manpower supply services to Gulf countries.
+            Our agency license ensures compliance with international labor regulations,
+            ethical hiring practices, and transparent recruitment procedures.',
+
+	'why_choose' => 'Why Choose Our Licensed Agency?',
+
+	'legal' => '100% Legal & Government Approved',
+
+	'trans_rec' => 'Transparent Recruitment Process',
+
+	'trusted_by' => 'Trusted by Gulf Employers',
 ];
 
 ?>
