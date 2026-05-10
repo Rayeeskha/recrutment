@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  \App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\LangController;
-
+use App\Http\Controllers\SitemapController;
 
 Route::get('/', HomeController::class)->name('home');
 
@@ -13,6 +13,8 @@ Route::match(['POST','GET'],'contact-us',  [HomeController::class, 'contactUsPag
 Route::match(['POST','GET'],'contactus',  [HomeController::class, 'contactUS'])->name('contactus');
 
 Route::match(['POST','GET'],'blogs',  [HomeController::class, 'blogs'])->name('blogs');
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 Route::match(['POST','GET'],'best-recruitment-agencies-in-india-mumbai-and-newdelhi',  [HomeController::class, 'recruitmentAgencyMumbaiAndDelhi']);
 
