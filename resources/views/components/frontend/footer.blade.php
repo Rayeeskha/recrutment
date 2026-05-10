@@ -1,5 +1,5 @@
 <!-- ===== Premium Footer Start ===== -->
- @php 
+ @php
     $logoPath = "assets/images/logo/logo.png";
     if(session()->get('locale') === 'ar'){
         $logoPath = "assets/images/logo/logo_ar.png";
@@ -63,16 +63,16 @@
                     <h4>@lang('front.address')</h4>
 
                     <div class="footer-contact">
-                        <p><strong>@lang('front.call_us_now'):</strong>
+                        <p><strong class="text-white">@lang('front.call_us_now'):</strong>
                             <a href="tel:8299352134" itemprop="telephone">8299352134</a></p>
 
-                        <p><strong>@lang('front.eml_add'):</strong>
+                        <p><strong class="text-white">@lang('front.eml_add'):</strong>
                             <a href="mailto:info@msgroupoftravels.com" itemprop="email">
                                 info@msgroupoftravels.com
                             </a></p>
 
                         <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                            <strong>@lang('front.address'):</strong><br>
+                            <strong class="text-white">@lang('front.address'):</strong><br>
                             <span itemprop="streetAddress" class="streetAddress">
                                 @lang('front.shop_address')
                             </span>
@@ -100,9 +100,9 @@
 </footer>
 <!-- ===== Premium Footer End ===== -->
 
-<a href="https://api.whatsapp.com/send/?phone={{ CustomHelper::whatsAppNumber() }}&text={{ __('front.enquiry') }}" 
-   target="_blank" 
-   class="whatsapp-float" 
+<a href="https://api.whatsapp.com/send/?phone={{ CustomHelper::whatsAppNumber() }}&text={{ __('front.enquiry') }}"
+   target="_blank"
+   class="whatsapp-float"
    aria-label="Chat with us on WhatsApp">
     <img src="{{ asset('assets/images/whatsapp.png') }}" alt="WhatsApp" />
 </a>

@@ -1,9 +1,9 @@
-<!-- Start Navbar Area --> 
+<!-- Start Navbar Area -->
 <style type="text/css">
     .logo_style{width: 80px; height: 50px}
 </style>
 
-@php 
+@php
     $lang = session()->get('locale') == 'en' ? 'ar' : 'en';
 
     $logoPath = "assets/images/logo/logo.png";
@@ -21,7 +21,7 @@
                 <a href="/">
                     <img src="{{ asset($logoPath) }}" class="logo-icon-1 logo_style" alt="logo">
                     <img src="{{ asset($logoPath) }}" class="logo-icon-2 logo_style" alt="logo">
-                    
+
                     <img src="{{ asset($logoPath) }}" class="main-logo logo_style" alt="logo">
                     <img src="{{ asset($logoPath) }}" class="white-logo logo_style" alt="logo">
                 </a>
@@ -64,7 +64,7 @@
                                 <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.ofc_rcrt_ind_rdh'))) }}" class="nav-link">
                                     @lang('front.ofc_rcrt_ind_rdh')
                                 </a>
-                            </li>                
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -72,7 +72,7 @@
                             @lang('front.agency')
                         </a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="nav-link dropdown-toggle">
                             @lang('front.empl_src')
@@ -88,7 +88,7 @@
                                 <a href="{{ route('urlRouting', CustomHelper::seoUrl(Lang::get('front.extrnl_empl_src'))) }}" class="nav-link">
                                     @lang('front.extrnl_empl_src')
                                 </a>
-                            </li>                 
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -99,7 +99,7 @@
 
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="nav-link dropdown-toggle">
-                            @lang('front.Blog')                           
+                            @lang('front.Blog')
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
@@ -112,7 +112,7 @@
                                     @lang('front.ofc_ind_newdlhi')
                                 </a>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a href="{{ url('مكتب-استقدام-الهند-مومباي') }}" class="nav-link">
                                     @lang('front.rec_ofc_ind_mum')
@@ -124,7 +124,7 @@
                                     @lang('front.rec_ofc_ind')
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -135,9 +135,9 @@
                 <div class="others-options style2 ms-auto">
                     <div class="option-item">
                         <div class="header-contact-box">
-                            <a href="tel:8299352134"><div class="icon">
+                            <!-- <a href="tel:8299352134"><div class="icon">
                                 <i class="flaticon-phone-call-1"></i>
-                            </div></a>
+                            </div></a> -->
                             <div class="content">
                                 <p>
                                     @lang('front.call_us_now')
@@ -166,7 +166,7 @@
                 </div>
                 @endif
 
-                <div class="others-options style2 ms-auto">
+                <!-- <div class="others-options style2 ms-auto">
                     <div class="option-item">
                         <div class="header-contact-box">
                             <a href="tel:8299352134">
@@ -176,8 +176,8 @@
                             </a>
                         </div>
                     </div>
-                    
-                </div>
+
+                </div> -->
 
                 @if($lang == 'en')
                 <div class="option-item" dir="ltr">
