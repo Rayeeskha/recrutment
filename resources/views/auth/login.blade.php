@@ -1,5 +1,12 @@
 <x-guest-layout>
     <!-- Session Status -->
+     <center>
+        <div style="width: 100px; height: 100px;">
+            <a href="/">
+                <img src="{{ asset('assets/images/logo/logo.png') }}" class="w-30 h-30 fill-current text-gray-500">
+            </a>
+        </div>
+    </center>
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form method="POST" action="{{ route('login') }}">
