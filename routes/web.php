@@ -12,6 +12,8 @@ Route::match(['POST','GET'],'contact-us',  [HomeController::class, 'contactUsPag
 
 Route::match(['POST','GET'],'contactus',  [HomeController::class, 'contactUS'])->name('contactus');
 
+Route::match(['POST','GET'],'blogs',  [HomeController::class, 'blogs'])->name('blogs');
+
 Route::match(['POST','GET'],'best-recruitment-agencies-in-india-mumbai-and-newdelhi',  [HomeController::class, 'recruitmentAgencyMumbaiAndDelhi']);
 
 Route::match(['POST','GET'],'مكتب-استقدام-الهند-مومباي-و-نيو-دلهي',  [HomeController::class, 'recruitmentAgencyMumbaiAndDelhiArbic']);

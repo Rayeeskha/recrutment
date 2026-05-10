@@ -6,7 +6,7 @@ is the file you need to edit to change the look of the template.
 
 This files table contents are outlined below>>>>>
 
-******************************************* 
+*******************************************
 ** - Default-style
 ** - Default-btn-style
 ** - Section-title-style
@@ -7140,6 +7140,263 @@ html[dir="ltr"], html[dir="ltr"] body {
     margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.7;
+}
+
+
+
+/* BLOGS */
+
+/* Page Title */
+.blog-page-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0c213a;
+}
+
+/* Card Wrapper */
+.premium-blog-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 26px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+}
+
+.premium-blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+/* Image */
+.premium-blog-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.premium-blog-card:hover .premium-blog-img img {
+    transform: scale(1.06);
+}
+
+/* Content */
+.premium-blog-content {
+    padding: 20px 22px;
+}
+
+/* Title */
+.premium-blog-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #12263f;
+    min-height: 55px;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.premium-blog-desc {
+    font-size: 15px;
+    color: #555;
+    min-height: 50px;
+    margin-bottom: 14px;
+}
+
+/* Read More Button */
+.premium-read-btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0077ff;
+    transition: .3s ease;
+}
+
+.premium-read-btn:hover {
+    color: #0057c7;
+}
+
+.arrow-icon {
+    margin-left: 5px;
+    transition: transform .3s ease;
+}
+
+.premium-read-btn:hover .arrow-icon {
+    transform: translateX(4px);
+}
+
+/* Responsive Fix */
+@media(max-width:768px){
+    .blog-page-title { font-size: 28px; }
+    .premium-blog-title { font-size: 18px; }
+    .premium-blog-img img { height: 180px; }
+}
+
+   /* Swiper container fix */
+.blogSwiper {
+    width: 100%;
+    padding: 10px 5px 40px;
+}
+
+/* Blog card container */
+.blog-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Fix image height */
+.blog-card-image img {
+    width: 100%;
+    height: 200px; /* FIXED: no collapse */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-card-content {
+    padding: 18px;
+    flex-grow: 1;
+}
+
+.blog-card-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    min-height: 44px; /* 2-line height fix */
+}
+
+.blog-card-content p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    max-height: 60px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.read-btn {
+    font-weight: 600;
+    color: #00a859;
+    font-size: 14px;
+}
+
+/* Hover animation */
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Swiper Fixes */
+.swiper-slide {
+    height: auto !important;   /* FIX broken row height */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #00a859;
+}
+
+.swiper-pagination-bullet-active {
+    background: #00a859 !important;
+}
+/* Heading */
+.client-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #1c2b48;
+}
+
+.client-subtitle {
+    font-size: 18px;
+    color: #5f6b7a;
+}
+
+/* Logo Card */
+.client-logo-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid #e6e9ee;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s ease;
+}
+
+.client-logo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+
+/* LOGO IMAGE — NO CROPPING */
+.client-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;   /* THE KEY FIX */
+}
+
+/* Group photo (multiple clients inside one image) */
+.client-logo-card img[src*="client4"] {
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .client-logo-card {
+        height: 140px;
+        padding: 15px;
+    }
+}
+
+/* Grayscale effect default */
+.client-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.75;
+    transition: all .35s ease-in-out;
+}
+
+/* Hover = Color + Brighter */
+.client-logo-card:hover .client-logo-img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+.client-logo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+
+    /* MAIN FOOTER */
+.footer-section-green {
+    background: #165d31;
+    padding: 80px 0 20px;
+    color: #e8f5e9;
+}
+
+/* LOGO */
+.footer-logo-green img {
+    width: 170px;
+    margin-bottom: 18px;
+}
+
+/* ABOUT TEXT */
+.footer-about-green {
+    font-size: 15px;
+    color: #d9f0df;
+    margin-bottom: 20px;
 }
 
 

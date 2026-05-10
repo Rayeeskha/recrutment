@@ -98,10 +98,10 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+                        <a href="{{ route('blogs') }}" class="nav-link">
                             @lang('front.Blog')
                         </a>
-                        <ul class="dropdown-menu">
+                        <!-- <ul class="dropdown-menu">
                             <li class="nav-item">
                                 <a href="{{ url('best-recruitment-agencies-in-india-mumbai-and-newdelhi') }}" class="nav-link">
                                     @lang('front.rec_agency')
@@ -125,7 +125,7 @@
                                 </a>
                             </li>
 
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('contact') }}" class="nav-link">@lang('front.cnts_us')</a>

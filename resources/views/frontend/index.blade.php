@@ -13,7 +13,7 @@
 
         <div class="text-center mb-5">
             <h2 class="section-title">
-              @lang('front.why_shoose')               
+              @lang('front.why_shoose')
             </h2>
         </div>
 
@@ -66,5 +66,8 @@
 
 <!-- Employee Sources -->
 <x-frontend.employementsource />
+
+ <!-- Blog -->
+@include('frontend.blogs.slider', ['blogs' => $blogs])
 
 @endsection

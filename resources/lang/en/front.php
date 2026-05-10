@@ -122,8 +122,8 @@ return [
 	'meet_the_team' =>'Meet The Team',
 
 	'shop_address' => 'Shop No.7, Ground Floor,Patel Apartment, C wing 233/234 Bellasis Road, Nagpada, Mumbai - 400008',
-	
-	'Blog' => 'Blog',
+
+	'Blog' => 'Blogs',
 
 	'rec_agency' => 'Agencies india mumbai and newdelhi',
 
@@ -147,14 +147,14 @@ return [
 
 	'contact_now' => 'Contact now',
 
-	'director_content' => 'The Managing Director of MS Tours Group brings extensive experience 
-                        in strategic management, workforce solutions, and corporate leadership, 
+	'director_content' => 'The Managing Director of MS Tours Group brings extensive experience
+                        in strategic management, workforce solutions, and corporate leadership,
                         ensuring operational excellence and sustainable growth across industries.',
-	
-	'manager_content' => 'The Marketing Manager leads brand strategy, market expansion, and 
-                        customer engagement initiatives, strengthening MS Tours Group’s 
+
+	'manager_content' => 'The Marketing Manager leads brand strategy, market expansion, and
+                        customer engagement initiatives, strengthening MS Tours Group’s
                         presence in regional and international markets.',
-	
+
 	'leadership_team' => 'Executive Leadership Team',
 
 	'leadership_team_description' => 'The Executive Leadership Team at MS Tours Group brings extensive industry expertise, strategic vision, and operational excellence to deliver reliable workforce solutions and business support services across regional and international markets.',
@@ -163,8 +163,8 @@ return [
 
 	'basic_value_desc' => 'Our core values guide our commitment to excellence, integrity, and sustainable business growth.',
 
-	'ms_tour_del' => 'MS Tours Group delivers professional workforce solutions, recruitment services, 
-                        and business support strategies designed to help companies grow efficiently 
+	'ms_tour_del' => 'MS Tours Group delivers professional workforce solutions, recruitment services,
+                        and business support strategies designed to help companies grow efficiently
                         while maintaining operational excellence and long-term sustainability.',
 
 	'our_structured' => 'Our structured recruitment and workforce management process ensures transparency, efficiency, and long-term success for our clients.',
@@ -199,24 +199,24 @@ return [
 
 	'rec_agency_heading' => 'Recruitment Agency in India – Trusted Manpower Supply to Gulf Countries',
 
-	'ms_leading' => 'MS Group is one of the leading recruitment agencies in India with offices in 
-            Mumbai and New Delhi, specializing in overseas manpower supply to Gulf countries 
+	'ms_leading' => 'MS Group is one of the leading recruitment agencies in India with offices in
+            Mumbai and New Delhi, specializing in overseas manpower supply to Gulf countries
             including UAE, Saudi Arabia, Qatar, Kuwait, Oman, and Bahrain.',
 
 	'license_rec' => 'Licensed Recruitment Agency',
 
-	'gov_approved' => 'Government-approved and legally compliant recruitment solutions 
+	'gov_approved' => 'Government-approved and legally compliant recruitment solutions
                     connecting skilled Indian professionals to international employers.',
-					
+
 	'mumbai_delhi_office' => 'Mumbai & New Delhi Offices',
 
-	'strategical_located' => 'Strategically located recruitment offices in India’s major cities 
+	'strategical_located' => 'Strategically located recruitment offices in India’s major cities
                     ensuring efficient manpower sourcing and processing.',
-	
+
 	'specialiging_gulf' => 'Specialized Gulf Hiring',
 
-	'we_spelize' => 'We specialize in manpower supply for construction, oil & gas, 
-                    healthcare, engineering, hospitality, and industrial sectors.',	
+	'we_spelize' => 'We specialize in manpower supply for construction, oil & gas,
+                    healthcare, engineering, hospitality, and industrial sectors.',
 
 	'why_shoose' => 'Why Choose MS Group?',
 
@@ -231,7 +231,7 @@ return [
 	'call_us' => 'Call Us',
 
 	'email_us' => 'Email Us',
-	
+
 	'whatsapp' => 'WhatsApp',
 
 	'chat_on' => 'Chat on WhatsApp',
@@ -241,19 +241,31 @@ return [
 	'new_delhi_office_location' => '233/234, C Wing, 7th Floor,
                         Nandlal Complex, Palasia Road,
                         New Delhi, India',
-	
+
 	'mumbai_office' => 'Mumbai Office',
 
 	'why_global_trust' => 'Why Global Employers Trust MS Group',
 
-	'gov_app' => 'Government-approved recruitment agency connecting skilled Indian professionals 
+	'gov_app' => 'Government-approved recruitment agency connecting skilled Indian professionals
             to Gulf countries through transparent, ethical and compliant hiring processes.',
-	
+
 	'gov_lice' => '✔ Government Licensed',
 
 	'mumbai_office_f' => '✔ Mumbai & Delhi Offices',
 
 	'per' => '✔ 100% Transparent Recruitment',
 
+    'blog_title' => 'Latest Blogs | Indian Recruitment Office',
+    'blog_keywords' => 'Indian recruitment blog, maid recruitment, Mumbai recruitment agency, Delhi recruitment agency, hiring workers from India, Indian manpower agency, recruitment news',
+    'blog_meta_description' => 'Read the latest recruitment updates, hiring tips, and information about Indian manpower from Mumbai and New Delhi. Professional guides and useful articles.',
 
+    'no_blogs_found' => 'No blogs found.',
+
+    'latest_blogs' => 'Latest Blogs',
+
+	'read_more' => 'Read More',
+
+	'next' => 'Next',
+
+    'previous' => 'Previous',
 ];

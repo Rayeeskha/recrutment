@@ -12,7 +12,7 @@
 
     <meta name="description" content="@yield('meta_description')" />
     <title>@yield('page_title')</title>
-    
+
     <link rel="canonical" href="{{url()->current()}}"/>
 
     <!--Bootstrap Css-->
@@ -39,7 +39,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/dark.css') }}">
     <!--Responsive css-->
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-    
+
+    <!--Swiper slider css-->
+    <link href="{{ asset('backend/assets/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
+
+
     <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
 
     <style type="text/css">
